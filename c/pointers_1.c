@@ -9,7 +9,7 @@ int main()
 	int a;
 
 	// int *var_name - putting an * (asterisk) before the variable name
-	// while declaring a it, makes it a ~pointer~ variable
+	// while declaring it, makes it a ~pointer~ variable
 	int *p;
 
 	a = 5;
