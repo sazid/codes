@@ -7,12 +7,14 @@
 int main()
 {
 	int a;
+	int b;
 
 	// int *var_name - putting an * (asterisk) before the variable name
 	// while declaring a it, makes it a ~pointer~ variable
 	int *p;
 
 	a = 5;
+	b = 20;
 
 	// &a - gives the memory address of the variable 'a'
 	p = &a;
@@ -36,6 +38,24 @@ int main()
 	// let's verify!
 	printf("a:\t %d\n", a);
 	printf("*p:\t %d\n", *p);
+
+
+	printf("---\n");
+
+	// first let's print the value of 'b'
+	printf("b: %d\n", b);
+
+	printf("---\n");
+
+	// Now, let's point 'p' to the address of the variable 'b'
+	p = &b;
+
+	// let's change the value of 'b' through the pointer 'p'
+	*p = 100;
+
+	// let's verify if the value of 'b' has changed or not
+	printf("b: %d\n", b);
+	printf("*p: %d\n", *p);
 
 	return 0;
 }
