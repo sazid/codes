@@ -12,8 +12,8 @@ int string_length(char *str) {
 }
 
 void string_reverse(char *str) {
-	char *initial_pos = str;
 	int length = string_length(str);
+	char *initial_pos = str;
 	int i;
 	char temp;
 
