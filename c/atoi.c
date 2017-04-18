@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 int a_to_i(char *str) {
 	int n;
