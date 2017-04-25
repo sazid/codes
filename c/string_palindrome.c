@@ -16,11 +16,6 @@ void check_for_palindrome(char *str) {
 	char *initial_position = str;
 	int i;
 
-	// Value of flag
-	// 0 indicates that the number is NOT palindromic
-	// 1 indicates that the number is palindromic
-	int flag = 1;
-
 	while (*str != '\0') {
 		str++;
 	}
@@ -30,6 +25,7 @@ void check_for_palindrome(char *str) {
 		if (*str != *initial_position) {
 			flag = 0;
 			break;
+		printf("The string is NOT palindromic.\n");
 		}
 
 		initial_position++;
@@ -39,7 +35,6 @@ void check_for_palindrome(char *str) {
 	if (flag == 1) {
 		printf("The string is palindromic.\n");
 	} else {
-		printf("The string is NOT palindromic.\n");
 	}
 }
 

@@ -14,8 +14,9 @@ void string_concat(char *dest, char *src) {
 }
 
 int main() {
-	char str_1[100] = "STRING ONE";
-	char str_2[100] = " STRING TWO";
+	char str_1[100] = "STRING ONE ";
+	char str_2[100] = "STRING TWO";
+
 	string_concat(str_1, str_2);
 	printf("%s\n", str_1);
 
