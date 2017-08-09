@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int m[1000000] = {0};
+int m[10000000] = {0};
 
 int main() {
 	int n;
@@ -16,7 +16,9 @@ int main() {
 			cout << i << endl;
 		}
 	}
-	cout << 1 << endl;
+
+	if (n != 1)
+		cout << 1 << endl;
 
 	return 0;
 }
