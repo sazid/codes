@@ -116,7 +116,11 @@ int main() {
 	get<1>(t) = 40;
 	// get is a generic function for retrieving an item from a tuple
 	// get<position>(variable)
-	cout << get<1>(t) << "\n";
+	cout << get<1>(t) << "\n"; // 40
+
+	// another way of declaring tuple - basic way
+	tuple<int, double, string, char> t1(10, 4.5, "test", 'A');
+	cout << get<2>(t1) << "\n"; // test
 
 	return 0;
 }
