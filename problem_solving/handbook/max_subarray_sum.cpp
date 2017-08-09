@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -8,7 +8,7 @@ int main() {
 	int best = 0;
 	for (int a = 0; a < n; a++) {
 		for (int b = a; b < n; b++) {
-
+			
 		}
 	}
 
