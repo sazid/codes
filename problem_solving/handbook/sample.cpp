@@ -5,6 +5,7 @@
 #define S second
 #define PB push_back
 #define MP make_pair
+#define MT make_tuple
 
 #define REP(i,a,b) for (int i = a; i <= b; i++)
 
@@ -106,6 +107,16 @@ int main() {
 	REP(i,1,n) {
 		// search(i)
 	}
+
+	// A tuple is a collection of objects of different data types
+	// pair is a specific case of tuple
+	auto t = MT(23, 543, "hello", 4.55);
+	// the auto keyword automatically deduces the type of a variable
+	cout << get<2>(t) << "\n"; // hello
+	get<1>(t) = 40;
+	// get is a generic function for retrieving an item from a tuple
+	// get<position>(variable)
+	cout << get<1>(t) << "\n";
 
 	return 0;
 }
