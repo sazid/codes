@@ -122,5 +122,12 @@ int main() {
 	tuple<int, double, string, char> t1(10, 4.5, "test", 'A');
 	cout << get<2>(t1) << "\n"; // test
 
+	// To determine the number of digits in an integer, use this:
+	// the base is 10 for determining the number of digits in decimal
+	// base = 2 for binary
+	// base = 16 for hexadecimal
+	// floor(log base (12345) + 1) = 5
+	cout << floor(log10(12345) + 1) << "\n";
+
 	return 0;
 }
