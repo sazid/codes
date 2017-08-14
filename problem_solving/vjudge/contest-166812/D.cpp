@@ -15,7 +15,6 @@ int main() {
         }
         int sq_l=0, sq_r=0, p_l=0, p_r=0;
         bool m=false;
-        for(int i=0; i)
     }
     return 0;
 }
