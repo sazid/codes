@@ -13,22 +13,24 @@ void seive_primes(ll n) {
     if (nums[i] == 0) {
       primes[j++] = i;
       ll upto = n/i;
-      for (ll k = 2; k <= upto; k++) {
+      for (ll k = 2; k < upto; k++) {
         nums[k*i] = 1;
       }
     }
   }
+  nums[0] = nums[1] = 1;
 }
 
 void print_prime_range(ll N, ll C) {
   ll n=N, mid, range, start, end;
   for (ll i = 0; i < 1500; i++) {
-    if (primes[i] <= N && primes[i+1] >= N) {
+    if (primes[i] <= N && i+1 < 1500 && primes[i+1] >= N) {
       n = i;
     }
   }
-  
+
   mid = n/2;
+  cout << n << " " << mid << "\n";
   if (C >= mid) {
     start = 0;
     end = n;
@@ -44,18 +46,23 @@ void print_prime_range(ll N, ll C) {
   }
   
   for (ll i = start; i <= end; i++) {
-    cout << " " << primes[i];
+    // cout << " " << primes[i];
   }
 }
 
 int main() {
+  ios::sync_with_stdio(0);
+  cin.tie(0);
+  freopen("in.txt", "r", stdin);
+  freopen("out.txt", "w", stdout);
+
   seive_primes(10000);
   ll N, C;
 
   while(scanf("%lld %lld", &N, &C) != EOF) {
-    cout << N << " " << C << ":";
+    // cout << N << " " << C << ":";
     print_prime_range(N, C);
-    cout << "\n\n";
+    // cout << "\n\n";
   }
   
   return 0;
