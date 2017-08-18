@@ -25,7 +25,7 @@ int main() {
 	ll count=0;
 	for (ll i = 0; i < 100; i++) {
 		if (is_prime(i)) {
-			// count++;
+			count++;
 			cout << i << "\n";
 		}
 	}
