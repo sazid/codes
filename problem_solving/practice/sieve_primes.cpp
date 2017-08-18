@@ -6,6 +6,7 @@ ll nums[10000001];
 
 bool is_prime(ll n) {
 	if (n==2) return true;
+	else if (n==1) return false;
 	else if (n&1) return nums[n] == 1 ? false : true;
 	else return false;
 }
