@@ -29,7 +29,7 @@ int main() {
 			cout << i << "\n";
 		}
 	}
-	cout << count << "\n";
+	cout << "Count: " << count << "\n";
 
 	return 0;
 }
