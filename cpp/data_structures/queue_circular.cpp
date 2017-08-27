@@ -40,6 +40,12 @@ public:
     return items == 0;
   }
   
+  // returns the item at the head
+  T front() {
+    if (is_empty()) throw QUEUE_EMPTY_EXCEPTION();
+    return arr[head];
+  }
+  
   void enqueue(T x) {
     // if queue is full, throw exception
     if (items == size) throw QUEUE_FULL_EXCEPTION();
