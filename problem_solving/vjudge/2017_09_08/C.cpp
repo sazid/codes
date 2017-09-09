@@ -3,8 +3,6 @@
 using namespace std;
 
 typedef unsigned long ul;
-
-bitset<5*1000001> primes;
 pair <bool, vector <unsigned long> > NUM[5*1000001];
 
 void seive_primes(ul n) {
@@ -33,6 +31,7 @@ ul score(ul n) {
 }
 
 void calculate_scores(ul n) {
+  NUM[0].second.PB(0);
   for (ul i = 1; i <= n; i++) {
     NUM[i].second.PB( NUM[i-1].second.back() + score(i) );
   }
