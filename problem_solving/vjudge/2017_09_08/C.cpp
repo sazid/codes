@@ -4,6 +4,7 @@ using namespace std;
 
 typedef unsigned long ul;
 
+bitset<5*1000001> primes;
 pair <bool, vector <unsigned long> > NUM[5*1000001];
 
 void seive_primes(ul n) {
