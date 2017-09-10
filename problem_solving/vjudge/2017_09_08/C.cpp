@@ -1,57 +1,53 @@
 #include <bits/stdc++.h>
-#define PB push_back
+#define MAX_SIZE 5000010
 using namespace std;
 
-typedef unsigned long ul;
-pair <bool, unsigned long> NUM[5*1000001];
+// http://www.geeksforgeeks.org/eulers-totient-function-for-all-numbers-smaller-than-or-equal-to-n/
 
-void seive_primes(ul n) {
-  NUM[0].first = 1;
-  NUM[1].first = 1;
+// step 1 - create an array to store phi values
+unsigned long phi[MAX_SIZE];
 
-  cout << NUM[0].second << endl;
-
-  for (ul i=2; i < n; i++) {
-    NUM[i].second = 1;
-    if (NUM[i].first == 0) {
-      NUM[i].second = i;
-
-      for (ul p=i+i; p < n; p+=i) {
-        NUM[p].first = 1;
-        NUM[p].second *= i;
-      }
-    }
-  }
+// step 2 - initialize all values of phi[i] as i
+void init_phi() {
+    for (unsigned long i = 0; i < 5000001; i++) phi[i] = i;
 }
 
-// ul score(ul n) {
-//   ul x=n;
-//   for (ul i=0; i < NUM[n].second.size(); i++) {
-//     x *= 1.0 - (1.0/NUM[n].second[i]);
-//   }
+// step 3 - compute totient values using the Euler's totient formula
+void compute_phi() {
+    for (unsigned long p = 2; p < 5000001; p++) {
+        // if phi[p] is not yet calculated, then it is a prime number
+        if (phi[p] == p) {
+            // phi of a prime number p, is one less than the number itself, p-1
+            phi[p] = p - 1;
 
-//   return x*x;
-// }
+            for (unsigned long i = p+p; i < 5000001; i+=p) {
+                // phi[i] = phi[i] * (p - p/1)
+                phi[i] = (phi[i] / p) * (p - 1);
+            }
+        }
+    }
+}
 
-// void calculate_scores(ul n) {
-//   NUM[0].second.PB(0);
-//   for (ul i = 1; i <= n; i++) {
-//     NUM[i].second.PB( NUM[i-1].second.back() + score(i) );
-//   }
-// }
+void cumulative_sum() {
+    for (unsigned long i = 1; i < 5000001; i++) {
+        phi[i] = (phi[i] * phi[i]) + phi[i - 1];
+    }
+}
 
 int main() {
-  ios::sync_with_stdio(0);
-  cin.tie(0);
-  seive_primes(5*1000001);
-  // calculate_scores(5*1000001);
+    ios::sync_with_stdio(0);
+    cin.tie(0);
 
-  unsigned long T, i=1, a, b;
-  cin >> T;
-  while (T-- > 0) {
-    cin >> a >> b;
-    // cout << "Case " << i++ << ": " << (NUM[b].second.back() - NUM[a-1].second.back()) << endl; 
-  }
-  
-  return 0;
+    init_phi();
+    compute_phi();
+    cumulative_sum();
+
+    unsigned long n, i = 1, a, b;
+    scanf("%lu", &n);
+    while (n-- > 0) {
+        scanf("%lu %lu", &a, &b);
+        printf("Case %lu: %lu\n", i++, phi[b]-phi[a-1]);
+    }
+
+    return 0;
 }
