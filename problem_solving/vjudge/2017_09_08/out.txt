@@ -1,15 +1,4 @@
-Case 1: divisible
-Case 2: not divisible
-Case 3: not divisible
-Case 4: divisible
-Case 5: not divisible
-Case 6: not divisible
-Case 7: not divisible
-Case 8: divisible
-Case 9: divisible
-Case 10: not divisible
-Case 11: divisible
-Case 12: not divisible
-Case 13: not divisible
-Case 14: not divisible
-Case 15: not divisible
+Case 1: 1 2 5 10
+Case 2: 11
+Case 3: 101 202
+Case 4: impossible
