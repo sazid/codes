@@ -45,8 +45,6 @@ function encode(matrix, msg_codes) {
         }
     }
 
-    console.log(encoded_matrix);
-    // console.log(msg_codes);
     return encoded_matrix;
 }
 
@@ -68,7 +66,3 @@ function encode_message(msg) {
         encode(code_matrix, msg_codes);
     }
 }
-
-
-// console.log(code_matrix);
-// console.log(encode(code_matrix, msg_codes));
