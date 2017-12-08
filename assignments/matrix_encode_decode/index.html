@@ -33,7 +33,7 @@
                     <p class="lead">
                       <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
                     </p> -->
-                    <form style="width: 250px; margin: auto;">
+                    <!-- <form style="width: 250px; margin: auto;">
                         <p class="lead">Code Matrix</p>
                         <div class="form-row">
                             <div class="col">
@@ -70,9 +70,22 @@
                                 <input class="form-control" placeholder="0">
                             </div>
                         </div>
-                    </form>
+                    </form> -->
 
-
+                    <div id="code_form">
+                        <div class="form-row">
+                            <label for="input_box">Input:</label>
+                            <textarea id="input_box" class="form-control" v-model="input_msg"></textarea>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <label for="output_box">Output:</label>
+                            <textarea id="output_box" class="form-control" v-model="output_msg" disabled></textarea>
+                        </div>
+                        <br>
+                            <button @click="encrypt" class="btn btn-md btn-secondary" id="encrypt_btn" type="button">Encrypt</button>
+                            <button @click="decrypt" class="btn btn-md btn-secondary" id="decrypt_btn" type="button">Decrypt</button>
+                    </div>
                 </main>
 
                 <footer class="mastfoot">

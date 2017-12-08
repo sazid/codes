@@ -15,6 +15,12 @@ var code_matrix = [
     [0, 1, 2]
 ];
 
+var inverse_code_matrix = [
+    [0, 1, -1],
+    [2, -2, -1],
+    [-1, 1, 1]
+];
+
 var message = "CRYPTOGRAPHY";
 encode_message(message);
 
@@ -40,16 +46,28 @@ function encode(matrix, msg_codes) {
             sum += matrix[a][b] * msg_codes[b];
         }
 
-        if (sum != 0) {
-            encoded_matrix.push(sum);
-        }
+        encoded_matrix.push(sum);
     }
 
     return encoded_matrix;
 }
 
+function decode(matrix, msg_codes) {
+    var decoded_matrix = [];
+    for (var a = 0; a < matrix.length; a++) {
+        var sum = 0;
+        for (var b = 0; b < matrix[a].length; b++) {
+            sum += matrix[a][b] * msg_codes[b];
+        }
+
+        decoded_matrix.push(code_to_char(sum));
+    }
+
+    return decoded_matrix;
+}
+
 function encode_message(msg) {
-    var msg_code_list = msg.match(/.../g);
+    var msg_code_list = msg.match(/.../g) || [];
     var rem = msg.length % 3;
     if (rem === 1) {
         msg_code_list.push(msg.substring(msg.length-1, msg.length) + "~~");
@@ -57,12 +75,50 @@ function encode_message(msg) {
         msg_code_list.push(msg.substring(msg.length-1, msg.length) + "~");
     }
 
+    var list = [];
     for (var i in msg_code_list) {
         var msg_codes = [
             char_to_code(msg_code_list[i][0]),
             char_to_code(msg_code_list[i][1]),
             char_to_code(msg_code_list[i][2])
         ];
-        encode(code_matrix, msg_codes);
+        list.push(encode(code_matrix, msg_codes));
     }
+    return list;
 }
+
+function decode_message(msg_code_list) {
+    var list = "";
+    for (var i in msg_code_list) {
+        var msg_codes = [
+            msg_code_list[i][0],
+            msg_code_list[i][1],
+            msg_code_list[i][2]
+        ];
+        var decode_list = decode(inverse_code_matrix, msg_codes);
+        for (var x in decode_list) {
+            // list += code_to_char(decode_list[x]);
+            console.log(decode_list[x]);
+        }
+    }
+    return list;
+}
+
+var codeForm = new Vue({
+    el: "#code_form",
+    data: {
+        input_msg: "",
+        output_msg: ""
+    },
+    methods: {
+        encrypt: function () {
+            var encoded_list = encode_message(this.input_msg);
+            this.output_msg = encoded_list;
+        },
+
+        decrypt: function () {
+            var encoded_codes = this.input_msg.split(',');
+            console.log(decode_message(encoded_codes));
+        }
+    }
+});

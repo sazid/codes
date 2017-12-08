@@ -6,6 +6,7 @@ int m[10000000] = {0};
 
 int main() {
 	int n;
+	cout << "Type something: ";
 	cin >> n;
 	int i;
 
