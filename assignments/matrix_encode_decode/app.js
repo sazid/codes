@@ -88,7 +88,7 @@ function decode_message(msg_code_list) {
         var i2 = msg_code_list[i+2];
         list += decode(inverse_code_matrix, [i0, i1, i2]);
     }
-    list = list.split(',').join('');
+    list = list.split(',').join('').split('~').join('');
     return list;
 }
 
