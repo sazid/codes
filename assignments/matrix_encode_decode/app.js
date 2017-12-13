@@ -54,12 +54,12 @@ function encode(matrix, msg_codes) {
 
 function decode(matrix, msg_codes) {
     var decoded_matrix = [];
-    for (var a = 0; a < matrix.length; a++) {
-        var sum = 0;
-        for (var b = 0; b < matrix[a].length; b++) {
-            sum += matrix[a][b] * msg_codes[b];
-        }
 
+    for (var i = 0, leni = matrix.length; i < leni; i++) {
+        var sum = 0;
+        for (var j = 0, lenj = matrix[i].length; j < lenj; j++) {
+            sum += matrix[i][j] * msg_codes[j];
+        }
         decoded_matrix.push(code_to_char(sum));
     }
 
@@ -67,40 +67,28 @@ function decode(matrix, msg_codes) {
 }
 
 function encode_message(msg) {
-    var msg_code_list = msg.match(/.../g) || [];
-    var rem = msg.length % 3;
-    if (rem === 1) {
-        msg_code_list.push(msg.substring(msg.length-1, msg.length) + "~~");
-    } else if (rem == 2) {
-        msg_code_list.push(msg.substring(msg.length-1, msg.length) + "~");
+    var list = [];
+
+    for (var i = 0; i < msg.length; i+=3) {
+        var i0 = char_to_code(msg[i]);
+        var i1 = char_to_code(msg[i+1] || '~');
+        var i2 = char_to_code(msg[i+2] || '~');
+
+        list.push(encode(code_matrix, [i0, i1, i2]));
     }
 
-    var list = [];
-    for (var i in msg_code_list) {
-        var msg_codes = [
-            char_to_code(msg_code_list[i][0]),
-            char_to_code(msg_code_list[i][1]),
-            char_to_code(msg_code_list[i][2])
-        ];
-        list.push(encode(code_matrix, msg_codes));
-    }
     return list;
 }
 
 function decode_message(msg_code_list) {
     var list = "";
-    for (var i in msg_code_list) {
-        var msg_codes = [
-            msg_code_list[i][0],
-            msg_code_list[i][1],
-            msg_code_list[i][2]
-        ];
-        var decode_list = decode(inverse_code_matrix, msg_codes);
-        for (var x in decode_list) {
-            // list += code_to_char(decode_list[x]);
-            console.log(decode_list[x]);
-        }
+    for (var i = 0, len = msg_code_list.length; i < len; i+=3) {
+        var i0 = msg_code_list[i];
+        var i1 = msg_code_list[i+1];
+        var i2 = msg_code_list[i+2];
+        list += decode(inverse_code_matrix, [i0, i1, i2]);
     }
+    list = list.split(',').join('');
     return list;
 }
 
@@ -118,7 +106,7 @@ var codeForm = new Vue({
 
         decrypt: function () {
             var encoded_codes = this.input_msg.split(',');
-            console.log(decode_message(encoded_codes));
+            this.output_msg = decode_message(encoded_codes);
         }
     }
 });
