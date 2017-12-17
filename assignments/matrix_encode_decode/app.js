@@ -74,6 +74,8 @@ function encode_message(msg) {
         var i1 = char_to_code(msg[i+1] || '~');
         var i2 = char_to_code(msg[i+2] || '~');
 
+        console.log(i0, i1, i2)
+
         list.push(encode(code_matrix, [i0, i1, i2]));
     }
 

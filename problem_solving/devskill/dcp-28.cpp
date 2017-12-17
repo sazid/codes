@@ -1,31 +1,22 @@
-/**
- * WARNING
- * UNSOLVED
- */
-
 #include <bits/stdc++.h>
-#define loop(n) for (int i = 0; i < n; i++)
+#define loop(n, i) for (int i = 0; i < n; i++)
 
 using namespace std;
 
 int main()
 {
+	ios::sync_with_stdio(false);
+	cin.tie(0);
 	int n;
 	double r, a;
 	double result;
 	
 	cin >> n;
-	loop(n)
+	loop(n, i)
 	{
 		cin >> r >> a;
-		result = round((sqrt(2) * a) * 100.0) / 100.0;
-		cout << "a: " << a << endl << "r: " << r << endl;
-		cout << "diameter: " << r*2 << endl;
-		cout << result << endl;
-		if (result == r * 2)
-			cout << "Yes\n";
-		else
-			cout << "No\n";
+		if ((4*r*r) <= 2*a*a) cout << "Yes\n";
+		else cout << "No\n";
 	}
 	return 0;
 }

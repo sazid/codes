@@ -1,25 +1,21 @@
-#include <bits/stdc++.h>
-#define f(n) for (int i = 0; i < n; i++)
-
+// http://codeforces.com/problemset/problem/158/A
+#include <iostream>
+#include <vector>
 using namespace std;
 
-int main()
-{
-	int n, k, k_val, nums = 0;
+int main() {
+	vector<int> scores;
+	int n, k, a, c=0;
 	cin >> n >> k;
-	int a[n];
-	f(n)
-	{
-		cin >> a[i];
-		if (k == (i + 1)) k_val = a[i];
+	while (n--) {
+		cin >> a;
+		scores.push_back(a);
 	}
-
-	f(n)
-	{
-		if (a[i] >= k_val && a[i] != 0) nums++;
+	for (int i : scores) {
+		if (i >= scores[k-1] && i > 0) {
+			c++;
+		}
 	}
-
-	cout << nums << endl;
-
+	cout << c << endl;
 	return 0;
 }

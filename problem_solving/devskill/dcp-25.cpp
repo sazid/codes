@@ -6,16 +6,18 @@ using namespace std;
 int main()
 {
 	int n, l;
-	string input, rev;
+	string input, rev, inp;
 
 	cin >> n;
 	loop(n)
 	{
 		cin >> input;
-		rev = input;
-		reverse(rev.begin(), rev.end());
+		rev = "";
+		inp = "";
+		for (int k = 0; k < input.size(); k++) inp += (char)tolower(input[k]);
+		for (int k = input.size()-1; k >= 0; k--) rev += (char)tolower(input[k]);
 
-		if (input == rev)
+		if (inp == rev)
 			cout << "Yes\n";
 		else
 			cout << "No\n";
