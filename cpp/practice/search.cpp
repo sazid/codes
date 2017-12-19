@@ -36,6 +36,7 @@ void linear_search(int A[], int size, int item) {
 
 int main() {
 	int A[7] = {1, 4, 3, 2, -4, 2, 4};
+	sort(A, A+7);
 
 	binary_search(A, 7, 4);
 	linear_search(A, 7, 4);
