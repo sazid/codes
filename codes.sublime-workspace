@@ -5,7 +5,7 @@
 		[
 			[
 				"for",
-				"for\tfor (…) {…}"
+				"forv\tVector For Loop"
 			],
 			[
 				"he",
@@ -80,24 +80,15 @@
 	"buffers":
 	[
 		{
-			"file": "assignments/matrix_encode_decode/index.html",
+			"file": "codes.sublime-project",
 			"settings":
 			{
-				"buffer_size": 2605,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assignments/matrix_encode_decode/app.js",
-			"settings":
-			{
-				"buffer_size": 2897,
-				"encoding": "UTF-8",
+				"buffer_size": 45,
 				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system": "",
 	"build_system_choices":
 	[
 		[
@@ -254,12 +245,17 @@
 	},
 	"expanded_folders":
 	[
-		"/home/sazid/workspace/codes",
-		"/home/sazid/workspace/codes/assignments",
-		"/home/sazid/workspace/codes/assignments/matrix_encode_decode"
+		"/home/sazid/workspace/codes"
 	],
 	"file_history":
 	[
+		"/home/sazid/workspace/codes/cpp/practice/insertion_sort.cpp",
+		"/home/sazid/workspace/codes/cpp/practice/selection_sort.cpp",
+		"/home/sazid/workspace/codes/cpp/practice/bubble_sort.cpp",
+		"/home/sazid/workspace/codes/problem_solving/codeforces/158B.cpp",
+		"/home/sazid/workspace/codes/problem_solving/codeforces/50A.cpp",
+		"/home/sazid/workspace/codes/assignments/matrix_encode_decode/app.js",
+		"/home/sazid/workspace/codes/problem_solving/codeforces/50A.cpp#include <bits/stdc++.h>",
 		"/home/sazid/workspace/codes/LICENSE",
 		"/home/sazid/workspace/codes/topics/utils/power.cpp",
 		"/home/sazid/workspace/codes/topics/utils/bit_sieve.cpp",
@@ -380,25 +376,17 @@
 		"/home/sazid/workspace/asz/ZeuzServer/MySite/templates/ViewEditLabel.html",
 		"/home/sazid/workspace/asz/ZeuzServer/site_media/Jquery/Local/CreateTestCase.js",
 		"/home/sazid/workspace/asz/ZeuzServer/MySite/templates/CreateTestCase.html",
-		"/home/sazid/workspace/asz/ZeuzServer/site_media/Jquery/Local/TestCaseCreatePage.js",
-		"/home/sazid/workspace/asz/ZeuzServer/BasicOperations/TestCaseCreateEdit.py",
-		"/home/sazid/workspace/asz/ZeuzServer/MySite/templates/TestCaseCreatePage.html.working",
-		"/home/sazid/workspace/asz/ZeuzServer/MySite/templates/EditTestCase.html",
-		"/home/sazid/workspace/asz/ZeuzServer/site_media/Jquery/Local/EditTestCase.js",
-		"/home/sazid/workspace/asz/ZeuzServer/MySite/templates/TestCaseCreatePage.html",
-		"/home/sazid/workspace/asz/ZeuzServer/site_media/Jquery/Local/TestCaseCreatePage.js.working",
-		"/home/sazid/workspace/asz/ZeuzServer/Common/DataBaseUtilities.py"
+		"/home/sazid/workspace/asz/ZeuzServer/site_media/Jquery/Local/TestCaseCreatePage.js"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
 		"height": 105.0,
 		"where_history":
 		[
-			""
 		]
 	},
 	"find_state":
@@ -406,134 +394,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"output_msg",
-			" =",
-			"msg",
-			"char_to_code",
-			"decode_message",
-			"msg_codes",
-			"console",
-			"decode_message",
-			"encode_message",
-			"a",
-			"char_to_code",
-			"]);",
-			"POW",
-			"x",
-			"i64",
-			"int",
-			"endl",
-			"k",
-			"endl",
-			"_checkbit",
-			"32",
-			"range",
-			"100000000",
-			"Leftd",
-			"Rgith",
-			"Left",
-			"dleft_end",
-			"left",
-			"void",
-			"left_end",
-			"right_end",
-			"left_start",
-			"MergeSort",
-			"i64",
-			"temp",
-			"vector",
-			"int",
-			"1000",
-			"r",
-			"pow",
-			"777777799",
-			"dequeue",
-			"size",
-			"sh",
-			"cout",
-			"inp",
-			"iostream",
-			"_size",
-			"top",
-			"peek",
-			"size",
-			"i64",
-			"ii",
-			"(",
-			"fn",
-			"Favorites",
-			"Places",
-			"int",
-			"NUM",
-			"x",
-			"size",
-			"scores",
-			"k",
-			"scores",
-			"sum",
-			"seive_primes",
-			"s",
-			"k",
-			"is_prime",
-			"false",
-			"1000010",
-			"MAX_PRIME",
-			"100000000",
-			"MAX_PRIME",
-			"no_of_primes",
-			"10",
-			"10000",
-			"1000",
-			"100000000",
-			"100000",
-			"100000000",
-			"100",
-			"100000",
-			"scanf",
-			"10100000000",
-			"count",
-			"Count",
-			"1",
-			"100000000",
-			"n",
-			"last_prime",
-			"100000000",
-			"11",
-			"last_prime",
-			"10",
-			"ul",
-			"tru0e",
-			"bool",
-			"10000000",
-			"200000000",
-			"10000000",
-			"200000000",
-			"20000",
-			"20000000",
-			"1000",
-			"i",
-			"3",
-			"pair",
-			"20000000",
-			"ll",
-			"11",
-			"int",
-			"ll",
-			"100010",
-			"iostream",
-			"elemnent",
-			"public",
-			"prev",
-			"next",
-			"prev",
-			"firstNode",
-			"lastNode",
-			"firstNode",
-			"last",
-			"exception",
-			"LIST_EMPTY_EXCEPTION",
-			"firstNode",
-			"append"
+			"selection_sort",
+			"bubble_sort",
+			"int"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -541,7 +404,6 @@
 		"regex": false,
 		"replace_history":
 		[
-			"unsigned long long"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -549,19 +411,25 @@
 		"whole_word": false,
 		"wrap": true
 	},
+	"folders":
+	[
+		{
+			"path": "/home/sazid/workspace/codes"
+		}
+	],
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "assignments/matrix_encode_decode/index.html",
-					"semi_transient": false,
+					"file": "codes.sublime-project",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2605,
+						"buffer_size": 45,
 						"regions":
 						{
 						},
@@ -575,43 +443,10 @@
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "assignments/matrix_encode_decode/app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2897,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1012,
-								1012
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 703.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -660,7 +495,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "codes.sublime-project",
+	"project": "",
 	"replace":
 	{
 		"height": 50.0
