@@ -3,12 +3,15 @@
 using namespace std;
 
 void insertion_sort (auto A[], auto size) {
-	for (auto i = 0; i < size-1; i++) {
-		auto mx = i;
-		for (auto j = i+1; j < size; j++) {
-			if (A[mx] <= A[j]) mx = j;
+	for (auto i = 1; i < size; i++) {
+		auto key = A[i];
+		auto j = i - 1;
+
+		while (j >= 0 && A[j] > key) {
+			A[j+1] = A[j];
+			j--;
 		}
-		swap(A[i], A[mx]);
+		A[j+1] = key;
 	}
 }
 
