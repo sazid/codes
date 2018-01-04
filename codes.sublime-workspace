@@ -79,14 +79,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "codes.sublime-project",
-			"settings":
-			{
-				"buffer_size": 45,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -111,10 +103,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 130.0,
-		"last_filter": "install package",
+		"height": 99.0,
+		"last_filter": "ssc++",
 		"selected_items":
 		[
+			[
+				"ssc++",
+				"Set Syntax: C++"
+			],
 			[
 				"install package",
 				"Package Control: Install Package"
@@ -122,10 +118,6 @@
 			[
 				"install",
 				"Install Package Control"
-			],
-			[
-				"ssc++",
-				"Set Syntax: C++"
 			],
 			[
 				"colorschem",
@@ -216,7 +208,7 @@
 				"Install Package Control"
 			]
 		],
-		"width": 479.0
+		"width": 497.0
 	},
 	"console":
 	{
@@ -245,11 +237,18 @@
 	},
 	"expanded_folders":
 	[
-		"/home/sazid/workspace/codes"
+		"/home/sazid/workspace/codes",
+		"/home/sazid/workspace/codes/problem_solving"
 	],
 	"file_history":
 	[
+		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_12_28/A.cpp",
+		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_12_28/K.cpp",
+		"/home/sazid/workspace/codes/problem_solving/codeforces/266B.cpp",
+		"/home/sazid/workspace/codes/problem_solving/codeforces/41A.cpp",
+		"/home/sazid/workspace/codes/cpp/practice/BST.cpp",
 		"/home/sazid/workspace/codes/cpp/practice/insertion_sort.cpp",
+		"/home/sazid/workspace/codes/cpp/practice/search.cpp",
 		"/home/sazid/workspace/codes/cpp/practice/selection_sort.cpp",
 		"/home/sazid/workspace/codes/cpp/practice/bubble_sort.cpp",
 		"/home/sazid/workspace/codes/problem_solving/codeforces/158B.cpp",
@@ -370,13 +369,7 @@
 		"/home/sazid/workspace/asz/ZeuzServer/MySite/templates/CreateNewRequirement.html",
 		"/home/sazid/workspace/asz/ZeuzServer/site_media/Jquery/Local/CreateNewTask.js",
 		"/home/sazid/workspace/asz/ZeuzServer/site_media/Jquery/Local/CreateNewRequirement.js",
-		"/home/sazid/workspace/asz/ZeuzServer/site_media/Jquery/Local/Milestone.js",
-		"/home/sazid/workspace/asz/ZeuzServer/site_media/Jquery/Local/CreateStep.js",
-		"/home/sazid/workspace/asz/ZeuzServer/site_media/Jquery/Local/ViewEditLabel.js",
-		"/home/sazid/workspace/asz/ZeuzServer/MySite/templates/ViewEditLabel.html",
-		"/home/sazid/workspace/asz/ZeuzServer/site_media/Jquery/Local/CreateTestCase.js",
-		"/home/sazid/workspace/asz/ZeuzServer/MySite/templates/CreateTestCase.html",
-		"/home/sazid/workspace/asz/ZeuzServer/site_media/Jquery/Local/TestCaseCreatePage.js"
+		"/home/sazid/workspace/asz/ZeuzServer/site_media/Jquery/Local/Milestone.js"
 	],
 	"find":
 	{
@@ -394,6 +387,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\t\n",
+			"j",
+			"binary",
+			"start",
 			"selection_sort",
 			"bubble_sort",
 			"int"
@@ -420,38 +417,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "codes.sublime-project",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 45,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
