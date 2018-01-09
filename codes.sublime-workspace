@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-size"
+			],
+			[
 				"for",
 				"forv\tVector For Loop"
 			],
@@ -79,6 +83,13 @@
 	},
 	"buffers":
 	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -238,10 +249,17 @@
 	"expanded_folders":
 	[
 		"/home/sazid/workspace/codes",
+		"/home/sazid/workspace/codes/assignments",
+		"/home/sazid/workspace/codes/assignments/aminul",
 		"/home/sazid/workspace/codes/problem_solving"
 	],
 	"file_history":
 	[
+		"/home/sazid/workspace/codes/assignments/aminul/activity.html",
+		"/home/sazid/workspace/codes/assignments/aminul/style.css",
+		"/home/sazid/workspace/codes/assignments/aminul/home_town.html",
+		"/home/sazid/workspace/codes/assignments/aminul/index.html",
+		"/home/sazid/workspace/codes/problem_solving/codeforces/148A.cpp",
 		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_12_28/A.cpp",
 		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_12_28/K.cpp",
 		"/home/sazid/workspace/codes/problem_solving/codeforces/266B.cpp",
@@ -364,12 +382,7 @@
 		"/home/sazid/workspace/asz/ZeuzServer/MySite/templates/ViewMilestone.html",
 		"/home/sazid/workspace/asz/ZeuzServer/site_media/assets/global/plugins/pacejs/pace_flash.css",
 		"/home/sazid/workspace/asz/ZeuzServer/MySite/templates/BaseTemplate.html",
-		"/home/sazid/workspace/asz/ZeuzServer/MySite/views.py",
-		"/home/sazid/workspace/asz/ZeuzServer/urls.py",
-		"/home/sazid/workspace/asz/ZeuzServer/MySite/templates/CreateNewRequirement.html",
-		"/home/sazid/workspace/asz/ZeuzServer/site_media/Jquery/Local/CreateNewTask.js",
-		"/home/sazid/workspace/asz/ZeuzServer/site_media/Jquery/Local/CreateNewRequirement.js",
-		"/home/sazid/workspace/asz/ZeuzServer/site_media/Jquery/Local/Milestone.js"
+		"/home/sazid/workspace/asz/ZeuzServer/MySite/views.py"
 	],
 	"find":
 	{
@@ -387,6 +400,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			":\n",
+			"30",
+			"Activities",
+			"activity",
+			"\t\t\n",
+			"h2",
+			"h4",
+			"Links",
+			"lib",
+			"online",
+			"line",
+			"gray",
+			"Em",
+			"em",
+			"span",
+			"int",
 			"\t\n",
 			"j",
 			"binary",
@@ -417,8 +446,38 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/home/sazid/workspace/codes/problem_solving/codeforces",
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
