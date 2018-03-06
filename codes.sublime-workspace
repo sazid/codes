@@ -88,50 +88,46 @@
 			"settings":
 			{
 				"buffer_size": 580,
-				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "problem_solving/vjudge/2018_02_26/H.cpp",
+			"file": "problem_solving/uva/out.txt",
 			"settings":
 			{
-				"buffer_size": 776,
-				"encoding": "UTF-8",
+				"buffer_size": 64,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "problem_solving/vjudge/2018_02_26/K.cpp",
+			"file": "problem_solving/uva/input.txt",
 			"settings":
 			{
-				"buffer_size": 726,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "problem_solving/vjudge/2018_02_26/G.cpp",
-			"settings":
-			{
-				"buffer_size": 711,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "problem_solving/vjudge/2018_02_26/I.cpp",
-			"settings":
-			{
-				"buffer_size": 1398,
+				"buffer_size": 145,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/C++/C++ Single File.sublime-build",
 	"build_system_choices":
 	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
 		[
 			[
 				[
@@ -153,9 +149,25 @@
 	"command_palette":
 	{
 		"height": 99.0,
-		"last_filter": "ssc++",
+		"last_filter": "theme",
 		"selected_items":
 		[
+			[
+				"theme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"sspyth",
+				"Set Syntax: Python"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"sspython",
+				"Set Syntax: Python"
+			],
 			[
 				"ssc++",
 				"Set Syntax: C++"
@@ -179,10 +191,6 @@
 			[
 				"Package Control: insta",
 				"Package Control: Install Package"
-			],
-			[
-				"theme",
-				"UI: Select Theme"
 			],
 			[
 				"sshtml",
@@ -257,13 +265,31 @@
 				"Install Package Control"
 			]
 		],
-		"width": 497.0
+		"width": 461.0
 	},
 	"console":
 	{
 		"height": 146.0,
 		"history":
 		[
+			"rfp.values()",
+			"rfp",
+			"r",
+			"a",
+			"a += 1",
+			"a",
+			"a += 1",
+			"a++",
+			"a = 3",
+			"rfp['test']",
+			"rfp.test",
+			"rfp['test']",
+			"rfp",
+			"rfp = { 'test': 1 }",
+			"rfp = { test: 1 }",
+			"rfp = {",
+			"print('hello')",
+			"print 'hello'",
 			"7/2",
 			"print('hello')",
 			"print 'hello'",
@@ -287,17 +313,39 @@
 	"expanded_folders":
 	[
 		"/home/sazid/workspace/codes",
-		"/home/sazid/workspace/codes/problem_solving",
-		"/home/sazid/workspace/codes/problem_solving/vjudge"
+		"/home/sazid/workspace/codes/problem_solving"
 	],
 	"file_history":
 	[
+		"/home/sazid/.cache/.fr-uQQGhE/tri-02.ans",
+		"/home/sazid/.cache/.fr-KwOtJr/tri-02.in",
+		"/home/sazid/.cache/.fr-9wHZbl/tri-01.in",
+		"/home/sazid/workspace/codes/problem_solving/template.cpp",
+		"/home/sazid/workspace/codes/problem_solving/uva/573.c",
+		"/home/sazid/workspace/codes/problem_solving/uva/573.cpp",
+		"/home/sazid/workspace/codes/problem_solving/uva/out.txt",
+		"/home/sazid/workspace/codes/problem_solving/uva/10141.py",
+		"/home/sazid/workspace/codes/problem_solving/uva/10141.cpp",
+		"/home/sazid/workspace/codes/problem_solving/10141.cpp",
+		"/home/sazid/workspace/codes/problem_solving/uva/11799.cpp",
+		"/home/sazid/workspace/codes/problem_solving/uva/11559.cpp",
+		"/home/sazid/workspace/codes/problem_solving/uva/10300.cpp",
+		"/home/sazid/workspace/codes/problem_solving/vjudge/2018_02_26/L.cpp",
+		"/home/sazid/workspace/codes/problem_solving/vjudge/2018_02_26/M.cpp",
+		"/home/sazid/workspace/codes/problem_solving/vjudge/2018_02_26/O.cpp",
+		"/home/sazid/workspace/codes/problem_solving/vjudge/2018_02_26/B.cpp",
+		"/home/sazid/workspace/codes/problem_solving/vjudge/2018_02_26/C.cpp",
+		"/home/sazid/workspace/codes/problem_solving/vjudge/2018_02_26/G.cpp",
+		"/home/sazid/workspace/codes/problem_solving/vjudge/2018_02_26/J.py",
+		"/home/sazid/workspace/codes/problem_solving/vjudge/2018_02_26/I.cpp",
+		"/home/sazid/workspace/codes/algorithm/greedy/counting_money.cpp",
+		"/home/sazid/workspace/codes/problem_solving/vjudge/2018_02_26/H.cpp",
+		"/home/sazid/workspace/codes/problem_solving/vjudge/2018_02_26/K.cpp",
 		"/home/sazid/workspace/codes/problem_solving/codeforces/937B.cpp",
 		"/home/sazid/workspace/codes/problem_solving/codeforces/937A.cpp",
 		"/home/sazid/workspace/codes/problem_solving/937B.cpp",
 		"/home/sazid/workspace/codes/problem_solving/codeforces/939B.cpp",
 		"/home/sazid/workspace/codes/problem_solving/codeforces/939A.cpp",
-		"/home/sazid/workspace/codes/problem_solving/template.cpp",
 		"/home/sazid/workspace/codes/problem_solving/uva/1124.cpp",
 		"/home/sazid/workspace/codes/problem_solving/uva/11044.cpp",
 		"/home/sazid/workspace/codes/problem_solving/uva/100.cpp",
@@ -335,7 +383,6 @@
 		"/home/sazid/workspace/codes/problem_solving/practice/find_sum_combination.cpp",
 		"/home/sazid/workspace/codes/problem_solving/uva/673.cpp",
 		"/home/sazid/workspace/codes/data_structures/stack.cpp",
-		"/home/sazid/workspace/codes/problem_solving/uva/out.txt",
 		"/home/sazid/workspace/codes/problem_solving/practice/bracket_matcher.cpp",
 		"/home/sazid/workspace/codes/cpp/data_structures/doubly_linked_list.cpp",
 		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_09_08/B.cpp",
@@ -397,33 +444,11 @@
 		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_12/sieve_gen.cpp",
 		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_12/N.cpp",
 		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_12/L.cpp",
-		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_12/A.cpp",
-		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_12/D.cpp",
-		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_12/F.cpp",
-		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_12/G.cpp",
-		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_12/I.cpp",
-		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_12/K.cpp",
-		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_12/B.cpp",
-		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_12/C.cpp",
-		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_12/H.cpp",
-		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_12/J.cpp",
-		"/home/sazid/workspace/codes/cpp/sieve_prime.cpp",
-		"/home/sazid/workspace/codes/problem_solving/handbook/sample.cpp",
-		"/home/sazid/workspace/codes/problem_solving/lightoj/out.txt",
-		"/home/sazid/workspace/codes/problem_solving/lightoj/1001.cpp",
-		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_04/C.cpp",
-		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_04/details.txt",
-		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_04/A.cpp",
-		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_04/G.cpp",
-		"/home/sazid/workspace/codes/c/bubble_sort.c",
-		"/home/sazid/workspace/codes/cpp/inheritance_1.cpp",
-		"/home/sazid/workspace/codes/cpp/setprecision.cpp",
-		"/home/sazid/workspace/codes/cpp/vector1.cpp",
-		"/home/sazid/workspace/codes/cpp/classes_and_objects_basics.cpp"
+		"/home/sazid/workspace/codes/problem_solving/vjudge/2017_08_12/A.cpp"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -437,6 +462,34 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			";\n",
+			"input",
+			"stdin",
+			"continue",
+			"stdin",
+			"input",
+			"ll",
+			"r",
+			"cin",
+			"V",
+			"r",
+			"min_req",
+			"a",
+			"HALLO",
+			"HELLO",
+			"ENGLISH",
+			"HELLO",
+			"H",
+			"ull",
+			"vii",
+			"ii",
+			"saima",
+			"ll",
+			"31",
+			"int",
+			"t",
+			"int",
+			"#",
 			"sumDigit",
 			"cout",
 			"31",
@@ -505,7 +558,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -521,14 +574,49 @@
 						"selection":
 						[
 							[
-								580,
-								580
+								378,
+								380
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
 							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "problem_solving/uva/out.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 64,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -538,84 +626,26 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "problem_solving/vjudge/2018_02_26/H.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 776,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								776,
-								776
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
 					"buffer": 2,
-					"file": "problem_solving/vjudge/2018_02_26/K.cpp",
+					"file": "problem_solving/uva/input.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 726,
+						"buffer_size": 145,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								726,
-								726
+								92,
+								92
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "problem_solving/vjudge/2018_02_26/G.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 711,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								708,
-								708
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/C++/C++.sublime-syntax"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -623,42 +653,13 @@
 					},
 					"stack_index": 2,
 					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "problem_solving/vjudge/2018_02_26/I.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1398,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								670,
-								670
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 271.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -673,6 +674,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -683,6 +690,7 @@
 		"rows":
 		[
 			0.0,
+			0.753984063745,
 			1.0
 		]
 	},
@@ -699,7 +707,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 52.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":

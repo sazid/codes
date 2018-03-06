@@ -18,48 +18,51 @@ typedef vector<int> vi;
 typedef pair<int, int> ii;
 typedef vector<ii> vii;
 
-int sumDigit(int n) {
-	int sum = 0;
+int letters[128];
+
+void init() {
+	ll i = 1;
+	for (char c = 'a'; c <= 'z'; c++) letters[int(c)] = i++;
+	i = 1;
+	for (char c = 'A'; c <= 'Z'; c++) letters[int(c)] = i++;
+}
+
+ll dig(ll n) {
+	ll sum = 0;
 	while (n > 0) {
-		sum += n % 10;
+		sum += (n % 10);
 		n /= 10;
 	}
 	return sum;
 }
 
-int su(int n) {
-	int t = sumDigit(n);
-	while (t >= 10) {
-		t = sumDigit(t);
+ll digitSum(ll n) {
+	while (n >= 10) {
+		n = dig(n);
 	}
-	return t;
+	return n;
+}
+
+ll charSum(string s) {
+	ll sum = 0;
+	for (char c : s) {
+		sum += letters[(int)c];
+	}
+	return sum;
 }
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 
-	char a[26], b[26];
-	int pos[128] = {0};
+	init();
 
-	for (char c = 'a', i = 1; c <= 'z'; c++, i++) pos[(int)c] = i;
-	for (char c = 'A', i = 1; c <= 'Z'; c++, i++) pos[(int)c] = i;
-
-	while (scanf("%s %s", a, b) != EOF) {
-		int len1 = strlen(a);
-		int len2 = strlen(b);
-		int sum1 = 0, sum2 = 0;
-
-		for (int i = 0; i < len1; i++) sum1 += pos[int(a[i])];
-		for (int i = 0; i < len2; i++) sum2 += pos[int(b[i])];
-
-		int s1 = su(sum1);
-		int s2 = su(sum2);
-
-		if (s1 > s2) swap(s1, s2);
-		printf("%.2f %%\n", (float)s1*100.0f / (float)s2);
-
-		// printf("%d %d %lf\n", sum1, sumDigit(sum1), double(double(sum1)/double(sumDigit(sum1))));
+	string a, b;
+	while (getline(cin, a) && getline(cin, b)) {
+		double sum_a = digitSum(charSum(a));
+		double sum_b = digitSum(charSum(b));
+		if (sum_a > sum_b) swap(sum_a, sum_b);
+		cout << fixed << setprecision(2) << (sum_a*100.0)/sum_b << " %\n";
 	}
 
 	return 0;

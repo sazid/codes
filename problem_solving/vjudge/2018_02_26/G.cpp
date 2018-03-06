@@ -17,20 +17,29 @@ typedef unsigned long long ull;
 typedef vector<int> vi;
 typedef pair<int, int> ii;
 typedef vector<ii> vii;
+typedef vector<ll> vll;
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 
-	ll n, x, m=0, sq;
-	cin >>n;
+	ll n, x;
+	cin >> n;
+	vll v;
 	while (n--) {
 		cin >> x;
-		sq = sqrt(x);
-		if (x > m && sq*sq != x) m = x;
+		v.PB(x);
 	}
+	sort(v.begin(), v.end());
 
-	cout << m << endl;
+	for (ll i = v.size()-1; i >= 0; i--) {
+		x = sqrt(v[i]);
+		if (x*x != v[i]) {
+			cout << v[i] << endl;
+			return 0;
+		}
+	}
+	cout << -1 << endl;
 
 	return 0;
 }
