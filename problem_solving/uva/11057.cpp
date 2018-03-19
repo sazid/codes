@@ -23,12 +23,38 @@ typedef vector<int> vi;
 typedef pair<int, int> ii;
 typedef vector<ii> vii;
 
-// double max = numer_limits<double>::max()
-// double INFINITY = numeric_limits<double>::infinity();
-
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
+
+	long N, M, x, a, b, p, q;
+	vector<long> v;
+	while (scanf("%ld", &N)!=EOF) {
+		a = b = p = q = 0;
+		v.clear();
+		while (N--) {
+			scanf("%ld", &x);
+			v.PB(x);
+		}
+		scanf("%ld", &M);
+
+		sort(v.begin(), v.end());
+		auto sz = v.size();
+
+		for (long i=0; i <= sz/2+1; i++) {
+			p = v[i];
+			q = M-p;
+			auto lb = upper_bound(v.begin()+i, v.end(), p)-1;
+			auto ub = lower_bound(v.begin()+1, v.end(), q);
+			if ( binary_search( v.begin()+i, v.end(), q ) and lb != ub ) {
+				a = p;
+				b = q;
+			}
+		}
+
+		if (a > b) swap(a, b);
+		printf("Peter should buy books whose prices are %ld and %ld.\n\n", a, b);
+	}
 
 	return 0;
 }

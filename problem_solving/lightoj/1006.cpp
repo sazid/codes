@@ -1,50 +1,71 @@
 #include <bits/stdc++.h>
+
+#define MOD 10000007
+
 using namespace std;
 
-vector<int> v(10010, -1);
 
-int a, b, c, d, e, f;
-int fn( int n ) {
-    if( n == 0 ) {
-        v[n] = a;
-        return a;
+
+typedef unsigned long ull;
+
+
+
+ull mem[10010];
+
+ull a, b, c, d, e, f;
+
+ull fn( ull k ) {
+
+    mem[0] = a;
+
+    mem[1] = b;
+
+    mem[2] = c;
+
+    mem[3] = d;
+
+    mem[4] = e;
+
+    mem[5] = f;
+
+    for (ull n = 6; n <= k; n++) {
+
+        ull r = mem[n-1] % MOD;
+
+        r = (r%MOD + mem[n-2]%MOD) % MOD;
+
+        r = (r%MOD + mem[n-3]%MOD) % MOD;
+
+        r = (r%MOD + mem[n-4]%MOD) % MOD;
+
+        r = (r%MOD + mem[n-5]%MOD) % MOD;
+
+        r = (r%MOD + mem[n-6]%MOD) % MOD;
+
+        mem[n] = r % MOD;
+
     }
-    if( n == 1 ) {
-        v[n] = b;
-        return b;
-    }
-    if( n == 2 ) {
-        v[n] = c;
-        return c;
-    }
-    if( n == 3 ) {
-        v[n] = d;
-        return d;
-    }
-    if( n == 4 ) {
-        v[n] = e;
-        return e;
-    }
-    if( n == 5 ) {
-        v[n] = f;
-        return f;
-    }
-    
-    if (v[n-1] == -1) v[n-1] = fn(n-1);
-    if (v[n-2] == -1) v[n-2] = fn(n-2);
-    if (v[n-3] == -1) v[n-3] = fn(n-3);
-    if (v[n-4] == -1) v[n-4] = fn(n-4);
-    if (v[n-5] == -1) v[n-5] = fn(n-5);
-    if (v[n-6] == -1) v[n-6] = fn(n-6);
-    return( v[n-1] + v[n-2] + v[n-3] + v[n-4] + v[n-5] + v[n-6] ) % 10000007;
+
+    return mem[k]%MOD;
+
 }
+
+
 
 int main() {
-    int n, caseno = 0, cases;
-    scanf("%d", &cases);
+
+    ull n, caseno = 0, cases;
+
+    scanf("%lu", &cases);
+
     while( cases-- ) {
-        scanf("%d %d %d %d %d %d %d", &a, &b, &c, &d, &e, &f, &n);
-        printf("Case %d: %d\n", ++caseno, fn(n));
+
+        scanf("%lu %lu %lu %lu %lu %lu %lu", &a, &b, &c, &d, &e, &f, &n);
+
+        printf("Case %lu: %lu\n", ++caseno, fn(n));
+
     }
+
     return 0;
 }
+

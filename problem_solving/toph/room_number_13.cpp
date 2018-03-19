@@ -8,11 +8,6 @@
 #define S second
 #define PI acos(-1)
 #define PRNT(arr) for (auto i : (arr)) cout << i << " "; cout << endl;
-#define eps 1e-11
-#define len(x) x.size()
-#define FIN freopen("input.txt", "r", stdin);
-#define FOUT freopen("output.txt", "w", stdout);
-#define NL "\n"
 
 using namespace std;
 
@@ -23,12 +18,26 @@ typedef vector<int> vi;
 typedef pair<int, int> ii;
 typedef vector<ii> vii;
 
-// double max = numer_limits<double>::max()
-// double INFINITY = numeric_limits<double>::infinity();
-
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
+
+	int T;
+	cin >> T;
+	multiset<int> mem;
+	while (T--) {
+		mem.clear();
+		ul n, x;
+		cin >> n >> x;
+		n--;
+		mem.insert(x);
+		while (n--) {
+			cin >> x;
+			mem.erase(mem.begin(), mem.upper_bound(x));
+			mem.insert(x);
+		}
+		cout << mem.size() << "\n";
+	}
 
 	return 0;
 }

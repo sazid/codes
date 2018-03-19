@@ -22,13 +22,27 @@ typedef unsigned long long ull;
 typedef vector<int> vi;
 typedef pair<int, int> ii;
 typedef vector<ii> vii;
-
-// double max = numer_limits<double>::max()
-// double INFINITY = numeric_limits<double>::infinity();
+typedef vector<ul> vul;
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 
+	vul v;
+	ul n, x, m, t=0;
+	cin >> n;
+	v.reserve(n+1);
+	while (n--) {
+		cin >> x;
+		t += x;
+		v.PB(t);
+	}
+	cin >> m;
+	while (m--) {
+		cin >> x;
+		cout << lower_bound(v.begin(), v.end(), x)-v.begin()+1 << NL;
+	}
+
 	return 0;
 }
+
