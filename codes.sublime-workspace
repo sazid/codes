@@ -87,8 +87,37 @@
 			"file": "problem_solving/template.cpp",
 			"settings":
 			{
-				"buffer_size": 733,
+				"buffer_size": 835,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "problem_solving/vjudge/25_03_2018_218399/K.cpp",
+			"settings":
+			{
+				"buffer_size": 1148,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "problem_solving/vjudge/25_03_2018_218399/A.cpp",
+			"settings":
+			{
+				"buffer_size": 1195,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "#include <bits/stdc++.h>\n\n#define rep(T, i, a, b) for (T (i)=(a); (i) < (b); (i)++)\n#define repe(T, i, a, b) for (T (i)=(a); (i) <= (b); (i)++)\n#define MOD(n, M) ((((n) % (M)) + (M)) % (M))\n#define PB push_back\n#define F first\n#define S second\n#define PI acos(-1)\n#define PRNT(arr) for (auto i : (arr)) cout << i << \" \"; cout << endl;\n#define eps 1e-11\n#define len(x) x.size()\n#define FIN freopen(\"input.txt\", \"r\", stdin);\n#define FOUT freopen(\"output.txt\", \"w\", stdout);\n#define NL \"\\n\"\n\nusing namespace std;\n\ntypedef long long ll;\ntypedef unsigned long ul;\ntypedef unsigned long long ull;\ntypedef vector<int> vi;\ntypedef pair<int, int> ii;\ntypedef vector<ii> vii;\n\n// double max = numer_limits<double>::max()\n// double INFINITY = numeric_limits<double>::infinity();\n\nint main() {\n\tios::sync_with_stdio(0);\n\tcin.tie(0);\n\n\tint n, m, k, x, y;\n\tcin >> n >> m >> k;\n\tif (k == 0) {\n\t\tcout << \"NO\\n\";\n\t\treturn 0;\n\t}\n\n\tif (n >= 8 and m >= 8) {\n\t\trep(int, i, 0, k) {\n\t\t\tcin >> x >> y;\n\t\t\t\n\t\t\tif (x <= 5 or (n-x) <= 4) {\n\t\t\t\tcout << \"YES\\n\";\n\t\t\t\treturn 0;\n\t\t\t}\n\t\t\tif (y <=  or (m-y) <= 4) {\n\t\t\t\tcout << \"YES\\n\";\n\t\t\t\treturn 0;\n\t\t\t}\n\t\t}\n\t\tcout << \"NO\\n\";\n\t} else {\n\t\tcout << \"YES\\n\";\n\t}\n\n\treturn 0;\n}\n",
+			"file": "problem_solving/vjudge/25_03_2018_218399/R.cpp",
+			"file_size": 1192,
+			"file_write_time": 131664678008334401,
+			"settings":
+			{
+				"buffer_size": 1191,
 				"line_ending": "Unix"
 			}
 		}
@@ -290,7 +319,7 @@
 		"menu_visible": true,
 		"show_minimap": false,
 		"show_open_files": false,
-		"show_tabs": false,
+		"show_tabs": true,
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
@@ -298,7 +327,8 @@
 	[
 		"/home/sazid/workspace/codes",
 		"/home/sazid/workspace/codes/problem_solving",
-		"/home/sazid/workspace/codes/problem_solving/codeforces"
+		"/home/sazid/workspace/codes/problem_solving/vjudge",
+		"/home/sazid/workspace/codes/problem_solving/vjudge/25_03_2018_218399"
 	],
 	"file_history":
 	[
@@ -433,7 +463,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 32.0
 	},
 	"find_in_files":
 	{
@@ -447,6 +477,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ull",
+			"auto",
+			"4",
+			"NO",
+			"<",
+			"< ",
+			"8",
+			"YES",
+			"NO",
 			" ||",
 			"left",
 			"item",
@@ -551,7 +590,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -560,15 +599,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 733,
+						"buffer_size": 835,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								488,
-								488
+								835,
+								835
 							]
 						],
 						"settings":
@@ -577,10 +616,98 @@
 							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 95.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "problem_solving/vjudge/25_03_2018_218399/K.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1120,
+								1120
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 696.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "problem_solving/vjudge/25_03_2018_218399/A.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1195,
+								1195
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 816.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "problem_solving/vjudge/25_03_2018_218399/R.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1191,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								873,
+								873
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 119.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -588,11 +715,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 32.0
 	},
 	"input":
 	{
-		"height": 42.0
+		"height": 47.0
 	},
 	"layout":
 	{
@@ -629,7 +756,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 50.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":
