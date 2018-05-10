@@ -31,5 +31,22 @@ int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 
+	string s, a;
+	vector<string> v;
+	int n;
+	cin >> n;
+	while (n--) {
+		cin >> a;
+		v.pb(a);
+	}
+	cin >> s;
+
+	for (string a : v) {
+		sort(a.begin(), a.end());
+		cout << a << nl;
+	}
+	sort(s.begin(), s.end()); 
+	cout << s << nl;
+
 	return 0;
 }

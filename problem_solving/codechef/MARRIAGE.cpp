@@ -31,5 +31,12 @@ int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 
+	int a, b;
+	cin >> a >> b;
+	if ( (a > 0 and b > 0) or (a < 0 and b < 0) ) cout << abs(a-b) << nl;
+	else if (a < 0) cout << b - a << nl;
+	else cout << a - b << nl;
+
 	return 0;
 }
+
