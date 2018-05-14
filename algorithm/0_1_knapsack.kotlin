@@ -1,0 +1,53 @@
+import java.util.ArrayList
+
+data class Item(var name: String, var cost: Int, var weight: Int)
+
+fun max(a: Int, b: Int) = if (a > b) a else b    
+
+fun main(args: Array<String>) {
+    
+    val items = ArrayList<Item>()
+    
+    // sentinel item
+    items.add(Item("sentinel", 0, 0))
+    
+    // items
+    items.add(Item("", 3, 2))
+    items.add(Item("", 4, 3))
+    items.add(Item("", 5, 4))
+    items.add(Item("", 6, 5))
+    
+    val targetWeight = 5
+    
+    val dp = Array(items.size, { IntArray(targetWeight + 1) })
+    
+    for (i in 1..items.size - 1) {
+    	for (j in 1..targetWeight) {
+			val item = items[i]
+            
+            if (item.weight > j) {
+                dp[i][j] = dp[i-1][j]
+            } else {
+                var r1 = dp[i-1][j]
+                var r2 = item.cost + dp[i-1][j - item.weight]
+                
+                if (r1 > r2) {
+                    dp[i][j] = r1
+                } else {
+                    dp[i][j] = r2
+                }
+            }
+        }
+    }
+
+    for (i in 0..items.size-1) {
+        for (j in 0..targetWeight) {
+            val x = dp[i][j]
+            print("$x ")
+        }
+        print("\n")
+    }
+    println(dp[items.size-1][targetWeight])
+
+}
+
