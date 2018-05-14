@@ -35,9 +35,9 @@ fun main(args: Array<String>) {
 
 	var i = items.size - 1
 	var j = targetWeight
-	while (i > 1) {
+	while (i > 0) {
 		val item = items[i]
-		if (dp[i][j] - dp[i-1][j - item.weight] == item.cost) {
+		if (j-item.weight >= 0 && dp[i][j] - dp[i-1][j - item.weight] == item.cost) {
 			choices.add(item)
 			j -= item.weight
 		}
