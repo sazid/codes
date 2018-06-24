@@ -5,7 +5,6 @@
 #define repe(i, a, b) for ((i)=(a); (i) <= (b); (i)++)
 #define mod(n, M) ((((n) % (M)) + (M)) % (M))
 #define pb push_back
-#define MP make_pair
 #define ff first
 #define ss second
 #define PI acos(-1)
@@ -31,6 +30,16 @@ typedef vector<ii> vii;
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
+
+    int a, b, c, mx = 0;
+    cin >> a >> b >> c;
+    mx = max(mx,  a + b + c );
+    mx = max(mx,  a * b * c );
+    mx = max(mx,  a * b + c );
+    mx = max(mx,  a + b * c );
+    mx = max(mx,  a * (b + c) );
+    mx = max(mx,  (a + b) * c );
+    cout << mx << endl;
 
 	return 0;
 }

@@ -5,7 +5,6 @@
 #define repe(i, a, b) for ((i)=(a); (i) <= (b); (i)++)
 #define mod(n, M) ((((n) % (M)) + (M)) % (M))
 #define pb push_back
-#define MP make_pair
 #define ff first
 #define ss second
 #define PI acos(-1)

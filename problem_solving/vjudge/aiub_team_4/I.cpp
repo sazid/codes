@@ -5,7 +5,6 @@
 #define repe(i, a, b) for ((i)=(a); (i) <= (b); (i)++)
 #define mod(n, M) ((((n) % (M)) + (M)) % (M))
 #define pb push_back
-#define MP make_pair
 #define ff first
 #define ss second
 #define PI acos(-1)
@@ -31,6 +30,15 @@ typedef vector<ii> vii;
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
+
+    int n, t, a[110], i=0, c=0;
+    double s=0;
+    cin >> n, t=n;
+    while (t--) cin>>a[i], s+=a[i++];
+
+    for (int i=0; i < n; i++) if ( floor((s-a[i])/2.0) == ceil((s-a[i])/2.0) ) c++;
+    // cout << s-a[i] << endl;
+    cout << c << endl;
 
 	return 0;
 }
