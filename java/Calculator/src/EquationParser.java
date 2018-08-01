@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 
 class EquationParser {
-    ArrayList<Object> equation = new ArrayList<>();
-
     /**
      * Should be in the format:
      * num0 + num1 - num2 * num4 / num5
@@ -30,6 +28,11 @@ class EquationParser {
         return true;
     }
 
+    /**
+     * Validate and solve the equation
+     * @param eq The equation in the form of an ArrayList
+     * @return solution of equation
+     */
     double solve(ArrayList<Object> eq) {
         if (!validate(eq)) return Double.NaN;
 

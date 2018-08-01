@@ -2,30 +2,25 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.ArrayList;
 
 public class Calculator extends JFrame implements ActionListener {
 
     JPanel mainPanel, displayPanel, buttonPanel;
     CalcButton btn_0, btn_1, btn_2, btn_3, btn_4, btn_5, btn_6, btn_7, btn_8, btn_9, btn_dot,
             btn_add, btn_subtract, btn_divide, btn_multiply, btn_root, btn_equals, btn_clear;
-    JLabel displayLabel;
+    JLabel displayLabel, equationLabel;
 
-    enum Operation {
-        ADD,
-        SUBTRACT,
-        MULTIPLY,
-        DIVIDE,
-        ROOT
-    }
-
-    double a, b;
-    Operation op;
+    EquationParser parser;
+    ArrayList<Object> equation = new ArrayList<>();
 
     public Calculator() {
         super("Calculator");
 
         setSize(300, 480);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+        parser = new EquationParser();
 
         initDisplayPanel();
         initButtonPanel();
@@ -37,13 +32,18 @@ public class Calculator extends JFrame implements ActionListener {
 
     private void initDisplayPanel() {
         displayPanel = new JPanel();
-        displayPanel.setLayout(new GridLayout());
+        displayPanel.setLayout(new GridLayout(2,1));
 
         displayLabel = new JLabel(" ", SwingConstants.RIGHT);
         displayLabel.setBorder(new EmptyBorder(0, 0, 0, 10));
         displayLabel.setFont(new Font("Courier", Font.PLAIN, 32));
 
+        equationLabel = new JLabel(" ", SwingConstants.RIGHT);
+        equationLabel.setBorder(new EmptyBorder(0, 0, 0, 10));
+        equationLabel.setFont(new Font("Courier", Font.PLAIN, 12));
+
         displayPanel.add(displayLabel);
+        displayPanel.add(equationLabel);
     }
 
     private void initMainPanel() {
@@ -127,6 +127,8 @@ public class Calculator extends JFrame implements ActionListener {
         btn_multiply.addActionListener(this);
         btn_divide.addActionListener(this);
         btn_root.addActionListener(this);
+
+        btn_equals.addActionListener(this);
     }
 
     @Override
@@ -164,7 +166,7 @@ public class Calculator extends JFrame implements ActionListener {
             displayLabel.setText(" ");
         } else if (src == btn_root) {
             try {
-                a = Double.parseDouble(t);
+                double a = Double.parseDouble(t);
                 a = Math.sqrt(a);
                 displayLabel.setText("" + a);
             } catch (NumberFormatException ignored) {
@@ -173,10 +175,46 @@ public class Calculator extends JFrame implements ActionListener {
             if (t.isEmpty()) {
                 displayLabel.setText("-");
             } else {
-                // do something else
+                addToEquation(t, "-");
             }
+        } else if (src == btn_add) {
+            addToEquation(t, "+");
+        } else if (src == btn_multiply) {
+            addToEquation(t, "*");
+        } else if (src == btn_divide) {
+            addToEquation(t, "/");
+        } else if (src == btn_equals) {
+            solveEquation(t);
         }
 
+    }
+
+    private void addToEquation(String val, String op) {
+        try {
+            double d = Double.parseDouble(val);
+            equation.add(d);
+            equation.add(op);
+            displayLabel.setText(" ");
+
+            StringBuilder s = new StringBuilder();
+            for (Object o: equation) s.append(o.toString());
+            equationLabel.setText(s.toString());
+        } catch (NumberFormatException ignored) {
+        }
+    }
+
+    private void solveEquation(String val) {
+        try {
+            double d = Double.parseDouble(val);
+            equation.add(d);
+
+            double result = parser.solve(equation);
+            displayLabel.setText(String.valueOf(result));
+
+            equation.clear();
+            equationLabel.setText(" ");
+        } catch (NumberFormatException ignored) {
+        }
     }
 
 }
