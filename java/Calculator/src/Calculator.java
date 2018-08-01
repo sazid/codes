@@ -163,6 +163,10 @@ public class Calculator extends JFrame implements ActionListener {
         } else if (src == btn_9) {
             displayLabel.setText(t + "9");
         } else if (src == btn_clear) {
+            if (t.isEmpty() && !equation.isEmpty()) {
+                equation.clear();
+                equationLabel.setText(" ");
+            }
             displayLabel.setText(" ");
         } else if (src == btn_root) {
             try {
