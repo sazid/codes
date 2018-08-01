@@ -11,6 +11,11 @@ public class CalcButton extends JButton {
         setIcons(iconPath, extension);
     }
 
+    public CalcButton(String s) {
+        super(s);
+        setDefaults();
+    }
+
     public CalcButton(Icon icon) {
         super(icon);
         setDefaults();
