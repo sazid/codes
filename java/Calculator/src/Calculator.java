@@ -1,28 +1,55 @@
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
 import java.awt.*;
-import java.awt.event.*;
 
 public class Calculator extends JFrame {
 
-    JPanel panel;
+    JPanel mainPanel, displayPanel, buttonPanel;
     CalcButton btn_0, btn_1, btn_2, btn_3, btn_4, btn_5, btn_6, btn_7, btn_8, btn_9,
-            btn_add, btn_subtract, btn_divide, btn_multiply, btn_equals, btn_clear;
+            btn_add, btn_subtract, btn_divide, btn_multiply, btn_root, btn_equals, btn_clear, btn_calc;
+    JLabel displayLabel;
 
     public Calculator() {
         super("Calculator");
 
-        setSize(350, 400);
+        setSize(300, 480);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        initUI();
+        initDisplayPanel();
+        initButtonPanel();
+        initMainPanel();
 
-        add(panel);
+        add(mainPanel);
     }
 
-    private void initUI() {
+    private void initDisplayPanel() {
+        displayPanel = new JPanel();
+        displayPanel.setLayout(new GridLayout());
+
+        displayLabel = new JLabel("0.0123456789", SwingConstants.RIGHT);
+        displayLabel.setBorder(new EmptyBorder(0, 0, 0, 10));
+        displayLabel.setFont(new Font("Courier", Font.PLAIN, 32));
+
+        displayPanel.add(displayLabel);
+    }
+
+    private void initMainPanel() {
+        mainPanel = new JPanel();
+        mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
+
+        JSeparator separator = new JSeparator();
+        separator.setBackground(Color.BLACK);
+
+        mainPanel.add(displayPanel);
+        mainPanel.add(separator);
+        mainPanel.add(buttonPanel);
+    }
+
+    private void initButtonPanel() {
         // use grid layout manager to size everything into a 6x4 grid
-        panel = new JPanel();
-        panel.setLayout(new GridLayout(6,4));
+        buttonPanel = new JPanel();
+        buttonPanel.setLayout(new GridLayout(5,4));
 
         btn_0 = new CalcButton("0", "png");
         btn_1 = new CalcButton("1", "png");
@@ -40,31 +67,33 @@ public class Calculator extends JFrame {
         btn_divide = new CalcButton("divide", "png");
         btn_equals = new CalcButton("equals", "png");
         btn_clear = new CalcButton("clear", "png");
+        btn_calc = new CalcButton("calc", "png");
+        btn_root = new CalcButton("root", "png");
 
-        panel.add(new CalcButton());
-        panel.add(new CalcButton());
-        panel.add(new CalcButton());
-        panel.add(new CalcButton());
-        panel.add(btn_clear);
-        panel.add(new CalcButton());
-        panel.add(new CalcButton());
-        panel.add(new CalcButton());
-        panel.add(btn_add);
-        panel.add(btn_subtract);
-        panel.add(btn_divide);
-        panel.add(btn_multiply);
-        panel.add(btn_6);
-        panel.add(btn_7);
-        panel.add(btn_8);
-        panel.add(btn_9);
-        panel.add(btn_2);
-        panel.add(btn_3);
-        panel.add(btn_4);
-        panel.add(btn_5);
-        panel.add(btn_0);
-        panel.add(btn_1);
-        panel.add(new CalcButton());
-        panel.add(btn_equals);
+        buttonPanel.add(btn_clear);
+        buttonPanel.add(new CalcButton());
+        buttonPanel.add(btn_root);
+        buttonPanel.add(btn_multiply);
+
+        buttonPanel.add(btn_7);
+        buttonPanel.add(btn_8);
+        buttonPanel.add(btn_9);
+        buttonPanel.add(btn_divide);
+
+        buttonPanel.add(btn_4);
+        buttonPanel.add(btn_5);
+        buttonPanel.add(btn_6);
+        buttonPanel.add(btn_subtract);
+
+        buttonPanel.add(btn_1);
+        buttonPanel.add(btn_2);
+        buttonPanel.add(btn_3);
+        buttonPanel.add(btn_add);
+
+        buttonPanel.add(btn_0);
+        buttonPanel.add(new CalcButton());
+        buttonPanel.add(new CalcButton());
+        buttonPanel.add(btn_equals);
     }
 
 }
