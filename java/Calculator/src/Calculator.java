@@ -167,7 +167,14 @@ public class Calculator extends JFrame implements ActionListener {
                 a = Double.parseDouble(t);
                 a = Math.sqrt(a);
                 displayLabel.setText("" + a);
-            } catch (NumberFormatException ignored) {}
+            } catch (NumberFormatException ignored) {
+            }
+        } else if (src == btn_subtract) {
+            if (t.isEmpty()) {
+                displayLabel.setText("-");
+            } else {
+                // do something else
+            }
         }
 
     }
