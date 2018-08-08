@@ -7,8 +7,6 @@
 #IncludeRegexTransform: 
 
 /home/sazid/workspace/codes/clion/main.cpp
-iostream
--
-algorithm
+bits/stdc++.h
 -
 
