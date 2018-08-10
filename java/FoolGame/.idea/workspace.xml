@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ea56d15a-4bcd-4848-833f-12e7bc15c596" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/background.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/clever.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/cursor.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/cursor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/fool.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/no.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/yes.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sazid/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sazid/NewGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sazid/Start.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sazid/resources/background.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sazid/resources/clever.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sazid/resources/cursor.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sazid/resources/cursor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sazid/resources/fool.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sazid/resources/no.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sazid/resources/yes.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithm/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cb/Main/Main.layout" beforeDir="false" afterPath="$PROJECT_DIR$/../../cb/Main/Main.layout" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cb/Main/bin/Debug/Main" beforeDir="false" afterPath="$PROJECT_DIR$/../../cb/Main/bin/Debug/Main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cb/Main/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../cb/Main/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cb/Main/obj/Debug/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../cb/Main/obj/Debug/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/clion" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/clion" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clion/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AreYouAFool/.idea/AreYouAFool.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AreYouAFool/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AreYouAFool/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AreYouAFool/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AreYouAFool/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/Calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculator/Calculator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculator/src/CalcButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sazid/GameButton.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="28212020">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="form" value="1" />
+          <entry key="gif" value="13" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="GUI_DESIGNER_FORM" value="1" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="Image" value="13" />
+          <entry key="JAVA" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="10" />
+          <entry key="java" value="2901" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2901" />
+          <entry key="PLAIN_TEXT" value="10" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sazid/Start.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sazid/Board.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#init#0;class#Board#0" />
+                <element signature="class#2145:2687" />
+                <element signature="class#3293:4205" />
+                <element signature="e#4266#4430#0" expanded="true" />
+                <element signature="e#4429#4430#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sazid/NewGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1141#1142#0" expanded="true" />
+                <element signature="e#1182#1183#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sazid/GameButton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Start.java" />
+        <option value="$PROJECT_DIR$/src/sazid/GameButton.java" />
+        <option value="$PROJECT_DIR$/src/sazid/Board.java" />
+        <option value="$PROJECT_DIR$/src/sazid/NewGame.java" />
+        <option value="$PROJECT_DIR$/src/sazid/Start.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="47" />
+    <option name="y" value="51" />
+    <option name="width" value="1390" />
+    <option name="height" value="996" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FoolGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoolGame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FoolGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoolGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FoolGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FoolGame" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sazid" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533763689153" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/sazid" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/sazid" />
+      <recent name="$PROJECT_DIR$/resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Start" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="sazid.Start" />
+      <module name="FoolGame" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Start" />
+      <module name="FoolGame" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea56d15a-4bcd-4848-833f-12e7bc15c596" name="Default Changelist" comment="" />
+      <created>1533744194283</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533744194283</updated>
+      <workItem from="1533744197688" duration="11149000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11149000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="6" width="1920" height="1074" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12673797" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" weight="0.3290993" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32978722" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290993" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.12978724" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#65#66#0" expanded="true" />
+            <element signature="e#101#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BoardTest.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BoardTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FoolGame.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/background.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/rock.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/rock2.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sazid/cursor.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/cursor.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sazid/GameButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sazid/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#init#0;class#Board#0" />
+            <element signature="class#2145:2687" />
+            <element signature="class#3293:4205" />
+            <element signature="e#4266#4430#0" expanded="true" />
+            <element signature="e#4429#4430#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sazid/NewGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1182#1183#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sazid/Start.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>FoolGame</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
