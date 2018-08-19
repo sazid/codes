@@ -2,7 +2,9 @@
 using namespace std;
 
 int N, x;
-map<int, pair<int,int>> points;
+// map<int, pair<int,int>> points;
+
+pair<int, int> points[250005];
 
 int main() {
 	ios::sync_with_stdio(0);
