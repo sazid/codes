@@ -1,40 +1,65 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef unsigned int ui;
+typedef long long ui;
 
 string to_bin(ui n) {
-    string s;
-    s.reserve(10);
+  string s;
 
-    while (n > 0) {
-        s += (n % 2 + '0');
-        n /= 2;
-    }
+  while (n > 0) {
+    s += (n%2 + '0');
+    n /= 2;
+  }
 
-    s += '0';
-    return s;
+  s = s + '0';
+  return s;
 }
 
 ui to_int(string s) {
-    ui n = 0;
-    ui sz = s.size();
+  ui n = 0, c = 0, i;
+  ui sz = s.size();
 
-    for (ui i = sz-1; i > 0; --i) {
-        n *= 2;
-        n += (s[i]-'0');
+  for (int i = 0; i < sz; ++i) {
+    n += ( (s[i]-'0') * (1 << c++) );
+  }
+
+  return n;
+}
+
+bool cmp(char a, char b) {
+  return a > b;
+}
+
+ui onoroy(string s) {
+  ui i, k, sz = s.size();
+  
+  for (i = 1; i < sz; ++i) {
+    if (s[i] == '0' && s[i-1] == '1') {
+      swap(s[i], s[i-1]);
+
+      if (s[i-2] == '1') {
+        sort(s.begin(), s.begin()+i-1, cmp);
+      }
+
+      break;
     }
+  }
 
-    return n;
+  return to_int(s);
 }
 
-int main() {
-    cout << to_bin(6) << endl;
-    cout << to_bin(7) << endl;
-    cout << to_bin(8) << endl;
-    cout << to_bin(10) << endl;
-    cout << to_int(to_bin(10)) << endl;
+int main(int argc, char const *argv[])
+{
+  int T, cs;
+  ui n;
 
-    return 0;
+  scanf("%d", &T);
+
+  for (cs = 1; cs <= T; ++cs) {
+    scanf("%lld", &n);
+    string s = to_bin(n);
+    printf("Case %d: %lld\n", cs, onoroy(s));
+  }
+
+  return 0;
 }
-
