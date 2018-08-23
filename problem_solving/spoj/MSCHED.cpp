@@ -8,44 +8,36 @@ typedef long long ll;
 
 vector<pi> cows;
 
-bool cp(pi &x, pi &y) {
-	if (x.second == y.second)
-		return x.first > y.first;
-	else
-		return x.second < y.second;
-}
+int slots[100005];
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 
 	int N;
-	ull MXTIME = 0, x, y;
+    ull x, y, sum = 0;
 	cin >> N;
-	while (N--) {
+	for (int i = 0; i < N; ++i) {
 		cin >> x >> y;
-		cows.emplace_back(x,y);
-		MXTIME = max(y, MXTIME);
+		cows.emplace_back(x, y);
 	}
 
-	sort(cows.begin(), cows.end(), cp);
+	sort(cows.rbegin(), cows.rend());
 
-	ull sz = cows.size();
-	ull sum = 0;
-	ull prev = 0;
-	ll time, i = 0;
+    for (int i = 0; i < N; ++i) {
+        int profit = cows[i].first;
+        int deadline = cows[i].second;
 
-	for (i = 0, time = 0; i < sz and time <= MXTIME; ++time) {
-		if (time < cows[i].second) {
-			sum += cows[i].first;
-			++i;
-		} else {
-			--time;
-			++i;
-		}
-	}
+        for (int j = deadline; j > 0; --j) {
+            if (slots[j] == 0) {
+                slots[j] = profit;
+                sum += profit;
+                break;
+            }
+        }
+    }
 
-	cout << sum << endl;
+    cout << sum << endl;
 
 	return 0;
 }
