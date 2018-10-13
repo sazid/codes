@@ -2,49 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ba56a08-eb03-4c0f-b7d7-90070def0ab6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../FoolGame/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/resources/background.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/resources/clever.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/resources/cursor.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/resources/cursor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/resources/fool.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/resources/no.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/resources/yes.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/src/sazid/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/src/sazid/NewGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/src/sazid/Start.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/src/sazid/resources/background.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/src/sazid/resources/clever.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/src/sazid/resources/cursor.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/src/sazid/resources/cursor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/src/sazid/resources/fool.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/src/sazid/resources/no.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FoolGame/src/sazid/resources/yes.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CalcButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClickAndScore/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClickAndScore/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClickAndScore/src/sazid/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClickAndScore/src/sazid/NewGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClickAndScore/src/sazid/ScoreButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ClickAndScore/src/sazid/Start.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PuzzleMatching/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PuzzleMatching/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PuzzleMatching/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PuzzleMatching/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PuzzleMatching/PuzzleMatching.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PuzzleMatching/src/sazid/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PuzzleMatching/src/sazid/NewGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PuzzleMatching/src/sazid/ScoreButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PuzzleMatching/src/sazid/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cb/Main/Main.depend" beforeDir="false" afterPath="$PROJECT_DIR$/../../cb/Main/Main.depend" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../cb/Main/Main.layout" beforeDir="false" afterPath="$PROJECT_DIR$/../../cb/Main/Main.layout" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../cb/Main/bin/Debug/Main" beforeDir="false" afterPath="$PROJECT_DIR$/../../cb/Main/bin/Debug/Main" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../cb/Main/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../cb/Main/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../cb/Main/obj/Debug/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../cb/Main/obj/Debug/main.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/CMakeFiles/clion.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clion/cmake-build-debug/clion" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/cmake-build-debug/clion" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../clion/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../clion/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AreYouAFool/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AreYouAFool/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CalcButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FoolGame/src/sazid/GameButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FoolGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FoolGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../main/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../main/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../main/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../main/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../main/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../main/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../main/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../main/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../main/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../main/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../main/cmake-build-debug/CMakeFiles/main.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../main/cmake-build-debug/CMakeFiles/main.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../main/cmake-build-debug/CMakeFiles/main.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../main/cmake-build-debug/CMakeFiles/main.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../main/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../main/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../main/cmake-build-debug/main" beforeDir="false" afterPath="$PROJECT_DIR$/../../main/cmake-build-debug/main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../main/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../main/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,19 +47,20 @@
     <session id="930464552">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
           <entry key="iml" value="3" />
-          <entry key="java" value="10" />
+          <entry key="java" value="13" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
@@ -77,7 +68,7 @@
         <counts>
           <entry key="CLASS" value="2" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="10" />
+          <entry key="JAVA" value="13" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -96,12 +87,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="361">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#initMainPanel#0;class#Calculator#0" />
@@ -110,6 +101,33 @@
                 <element signature="method#addToEquation#0;class#Calculator#0" />
                 <element signature="method#solveEquation#0;class#Calculator#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CalcButton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Start.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/EquationParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -127,6 +145,7 @@
     <findStrings>
       <find>JButton</find>
       <find>btn</find>
+      <find>setlayout</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,9 +175,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="47" />
-    <option name="y" value="51" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="59" />
+    <option name="y" value="25" />
     <option name="width" value="1390" />
     <option name="height" value="996" />
   </component>
@@ -167,36 +186,20 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Calculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Calculator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Calculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Calculator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533744445393" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../bank-management-system" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -259,6 +262,9 @@
       <workItem from="1533096034587" duration="16150000" />
       <workItem from="1533742659811" duration="1152000" />
       <workItem from="1533755816377" duration="1989000" />
+      <workItem from="1535472879358" duration="1298000" />
+      <workItem from="1535476069312" duration="599000" />
+      <workItem from="1536040639697" duration="57000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1533097367687</created>
@@ -313,18 +319,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25755000" />
+    <option name="totallyTimeSpent" value="27709000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="51" width="1390" height="996" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="-1" width="1920" height="1081" extended-state="6" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.1761194" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.17910448" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3287234" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.17234042" />
@@ -381,25 +386,7 @@
     <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EquationParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../FoolGame/src/sazid/GameButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#108#109#0" expanded="true" />
-            <element signature="e#137#138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../FoolGame/src/sazid/GameButton.java" />
     <entry file="file://$PROJECT_DIR$/Calculator.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -407,17 +394,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Start.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="361">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#initMainPanel#0;class#Calculator#0" />
@@ -426,6 +406,27 @@
             <element signature="method#addToEquation#0;class#Calculator#0" />
             <element signature="method#solveEquation#0;class#Calculator#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CalcButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EquationParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
         </state>
       </provider>
     </entry>

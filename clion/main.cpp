@@ -1,34 +1,15 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-
-char cnt[128];
-
-int main() {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-
-    long n = 0;
-    string s = "";
-
-    cin >> n >> s;
-
-    auto sz = s.size();
-    for (long i = 0; i < sz; ++i) ++cnt[ s[i] ];
-
-
-    bool f = false;
-    for (char i : cnt) {
-
-        if (i > 1) {
-            f = true;
-            break;
-        }
-
+int main()
+{
+    long long t,i,n,l,r,m,v,j,d1,d2,s1,s2;
+    cin>>t;
+    for(i=1;i<=t;i++)
+    {
+        cin>>m>>v>>l>>r;
+        if(l%v==0) l=l-v;
+        s1=((l-l%v)-v)/v+1;
+        s2=((m-m%v)-(r+v-r%v))/v+1;
+        cout<<s1+s2<<endl;
     }
-
-
-    if (f) cout << "Yes\n";
-    else cout << "No\n";
-
-    return 0;
 }

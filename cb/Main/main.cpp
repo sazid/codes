@@ -1,32 +1,54 @@
 #include <bits/stdc++.h>
+
+#define rep(i, a, b) for ((i)=(a); (i) < (b); (i)++)
+#define reps(i, a, b, s) for ((i)=(a); (i) < (b); (i)+=(s))
+#define repe(i, a, b) for ((i)=(a); (i) <= (b); (i)++)
+#define mod(n, M) ((((n) % (M)) + (M)) % (M))
+#define pb push_back
+#define MP make_pair
+#define ff first
+#define ss second
+#define PI acos(-1)
+#define prnt(arr) for (auto i : (arr)) cout << i << " "; cout << endl;
+#define eps 1e-11
+#define len(x) x.size()
+#define FIN freopen("input.txt", "r", stdin);
+#define FOUT freopen("output.txt", "w", stdout);
+#define nl "\n"
+#define all(x) x.begin(), (x).end()
+#define FASTIO ios::sync_with_stdio(0); cin.tie(0);
+#define READINT(x) scanf("%d", &(x))
+
 using namespace std;
 
-typedef long ll;
+typedef long long ll;
+typedef unsigned long ul;
+typedef unsigned long long ull;
+typedef vector<int> vi;
+typedef pair<int, int> ii;
+typedef vector<ii> vii;
 
-const long N = 1e5+10;
-long fre[N];
-long dp[N];
+//double max = numeric_limits<double>::max();
+//double INF = numeric_limits<double>::infinity();
 
 int main() {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
+//    FASTIO
 
-    long n,x,mx=0;
-    cin >> n;
-    for (long i = 0; i < n; ++i) {
-        cin >> x;
-        mx = max(mx,x);
-        ++fre[x];
+    int T, cs;
+
+    READINT(T);
+
+    repe(cs, 1, T) {
+
+        int ans = 0;
+
+
+        //printf("Case %d: %d %d %lld\n", cs, dx, dy, ans);
+
     }
-
-    ++mx;
-    dp[0] = 0;
-    dp[1] = 1 * fre[1];
-    for (long i = 2; i <= mx; ++i) {
-        dp[i] = max(dp[i-1], dp[i-2] + (freq[i] * i));
-    }
-
-    cout << dp[mx] << endl;
 
     return 0;
 }
+
+/*
+ */
