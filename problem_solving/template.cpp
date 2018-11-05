@@ -3,6 +3,7 @@
 #define rep(i, a, b) for ((i)=(a); (i) < (b); (i)++)
 #define reps(i, a, b, s) for ((i)=(a); (i) < (b); (i)+=(s))
 #define repe(i, a, b) for ((i)=(a); (i) <= (b); (i)++)
+#define foreach(it,c) for(typeof((c).begin()) it=(c).begin();it!=(c).end();++it)
 #define mod(n, M) ((((n) % (M)) + (M)) % (M))
 #define pb push_back
 #define MP make_pair
