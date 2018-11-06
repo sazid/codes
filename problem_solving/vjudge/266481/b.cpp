@@ -11,15 +11,15 @@ using namespace std;
 
 int dx[] = {+1, +1, +2, +2, -1, -1, -2, -2};
 int dy[] = {+2, -2, +1, -1, +2, -2, +1, -1};
-int grid[12][12];
+int grid[11][11];
 int n, m;
 int reached, cnt;
-int level[105][105];
-bool visited[105][105];
+int level[11][11];
+bool visited[11][11];
 
 void bfs(pii u) {
-	for (int i = 0; i < 105; ++i) {
-		for (int j = 0; j < 105; ++j) {
+	for (int i = 0; i < 11; ++i) {
+		for (int j = 0; j < 11; ++j) {
 			level[i][j] = 0;
 			visited[i][j] = 0;
 		}
