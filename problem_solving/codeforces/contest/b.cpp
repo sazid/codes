@@ -1,27 +1,54 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long ll;
-typedef unsigned long long ull;
-
-int arr[(int)1e6 + 5];
-
 int main() {
-	ios::sync_with_stdio(0);
+	ios_base::sync_with_stdio(0);
 	cin.tie(0);
 	
-	int n;
-	cin >> n;
+	string s;
+	cin >> s;
 	
-	arr[0] = 0;
-	for (int i = 1; i <= n; ++i) {
-		cin >> arr[i];
+	if (s.size() <= 20) {
+		cout << 1 << ' ' << s.size() << '\n' << s << endl;
+		return 0;
 	}
 	
-	for (int i = 1; i <= n-1; ++i) {
+	int rows, cols;
+	int total;
+	for (rows = 2; rows <= 5; ++rows) {
+		
+		for (cols = 1; cols <= 20; ++cols) {
+			total = cols * rows;
+			
+			if ((int)s.size() <= total) {
+				int rem = total - s.size();
+				int t = rows;
+				cout << rows << ' ' << cols << '\n';
+				
+				int p = 0;
+				for (int i = 0; i < rows; ++i) {
+					int stars_per_row = ceil(double(rem) / (double)t);
+					rem -= stars_per_row;
+					--t;
+					
+					for (int j = 0; j < cols - stars_per_row; ++j) {
+						cout << s[p++];
+					}
+					
+					for (int kk = 0; kk < stars_per_row; ++kk) {
+						cout << '*';
+					}
+					
+					cout << '\n';
+				}
+				
+				return 0;
+			}
+		}
 		
 	}
 	
 	return 0;
 }
 
+//~ MyNameIsLifeIAmForeverByYourSideMyNameIsLife

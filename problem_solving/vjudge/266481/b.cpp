@@ -6,20 +6,21 @@
 #define vis(u) visited[u.xx][u.yy]
 #define lev(u) level[u.xx][u.yy]
 #define check(p) if ( (p.xx >= 0 && p.xx < m) && (p.yy >= 0 && p.yy < n) && !vis(p) )
+#define rep(i, a, b) for (int i = 0; i < a; ++i)
 
 using namespace std;
 
 int dx[] = {+1, +1, +2, +2, -1, -1, -2, -2};
 int dy[] = {+2, -2, +1, -1, +2, -2, +1, -1};
-int grid[12][12];
+int grid[11][11];
 int n, m;
 int reached, cnt;
-int level[105][105];
-bool visited[105][105];
+int level[11][11];
+bool visited[11][11];
 
 void bfs(pii u) {
-	for (int i = 0; i < 105; ++i) {
-		for (int j = 0; j < 105; ++j) {
+	rep(i, 0, 11) {
+		rep(j, 0, 11) {
 			level[i][j] = 0;
 			visited[i][j] = 0;
 		}
@@ -40,7 +41,7 @@ void bfs(pii u) {
 			++cnt;
 		}
 		
-		for (int i = 0; i < 8; ++i) {
+		rep(i, 0, 8) {
 			pii v = mp(u.xx + dx[i], u.yy + dy[i]);
 			check(v) {
 				lev(v) = lev(u) + 1;
@@ -54,22 +55,21 @@ void bfs(pii u) {
 int main() {
 	int T;
 	cin >> T;
-	for (int cs = 1; cs <= T; ++cs) {
+	rep(cs, 1, T+1) {
 		cin >> m >> n;
 		int no_of_pieces = 0;
 		char c;
-		for (int row = 0; row < m; ++row)
-			for (int col = 0; col < n; ++col) {
-				cin >> c;
-				if (c != '.') {
-					++no_of_pieces;
-					grid[row][col] = c-'0';
-				} else
-					grid[row][col] = 0;
-			}
+		rep(row, 0, m) rep(col, 0, n {
+			cin >> c;
+			if (c != '.') {
+				++no_of_pieces;
+				grid[row][col] = c-'0';
+			} else
+				grid[row][col] = 0;
+		}
 		int ans = INT_MAX;
-		for (int i = 0; i < m; ++i) {
-			for (int j = 0; j < n; ++j) {
+		rep(i, 0, m) {
+			rep(j, 0, n) {
 				cnt = 0, reached = 0;
 				bfs(mp(i, j));
 				if (cnt == no_of_pieces)

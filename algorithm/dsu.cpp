@@ -1,53 +1,31 @@
-#include <iostream>
-#include <cmath>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-const int N = 50;
-int father[N+1];
+int parent[1000];
 
-void init() {
-    for (int i = 0; i < N; ++i) {
-        father[i] = i;
-    }
+void make_set(int v) {
+	parent[v] = v;
 }
 
-int find(int node) {
-    if (father[node] != node) {
-        father[node] = find(father[node]);
-    }
-    return father[node];
+int find_set(int v) {
+	if (v == parent[v])
+		return v;
+	return parent[v] = find_set(parent[v]);
 }
 
-void unite(int A, int B) {
-    int rootA = find(A);
-    int rootB = find(B);
-    if (rand() % 2) {
-        father[rootB] = rootA;
-    } else {
-        father[rootA] = rootB;
-    }
+void union_sets(int a, int b) {
+	a = find(a);
+	b = find(b);
+	if (a != b) {
+		if (rand() % 2)
+			swap(a, b);
+		parent[b] = a;
+	}
 }
 
 int main() {
-    init();
-
-    for (int i = 0; i <= 6; ++i) {
-        cout << "Root of " << i << ": " << find(i) << endl;
-    }
-
-    unite(0, 1);
-    unite(3, 4);
-    unite(5, 6);
-
-    unite(0, 6);
-    unite(1, 4);
-    unite(4, 2);
-
-    for (int i = 0; i <= 6; ++i) {
-        cout << "Root of " << i << ": " << find(i) << endl;
-    }
-
-    return 0;
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	
+	return 0;
 }
-
