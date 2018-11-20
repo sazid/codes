@@ -19,6 +19,7 @@ int level[11][11];
 bool visited[11][11];
 
 void bfs(pii u) {
+<<<<<<< HEAD
 	rep(i, 0, 11) {
 		rep(j, 0, 11) {
 			level[i][j] = 0;
