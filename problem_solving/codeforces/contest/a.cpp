@@ -1,28 +1,29 @@
 #include <bits/stdc++.h>
+#define rep(i, a, b) for (int i = a; i < b; ++i)
 using namespace std;
+using ll = long long;
 
-int arr[105];
+int n, a=0,b=0,s=0;
 
-int main() {
-	ios_base::sync_with_stdio(0);
-	cin.tie(0);
-	
-	int n, k, x;
-	cin >> n >> k;
+void read() {
+	cin >> n;
+}
 
-	int mx_count = 0;
-	int type_of_utensils = 0;
-	
-	for (int i = 0; i < n; ++i) {
-		cin >> x;
-		if (arr[x] == 0) ++type_of_utensils;
-		++arr[x];
-		mx_count = max(mx_count, arr[x]);
+void solve() {
+	if (n == 1) {
+		cout << 1;
+		return;
 	}
 
-	int y = ceil(double(mx_count)/double(k));
-	
-	cout << type_of_utensils * k * y - n << endl;
-	
-	return 0;
+	cout << abs(a-b) << endl;
+}
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
+    read();
+    solve();
+
+    return 0;
 }

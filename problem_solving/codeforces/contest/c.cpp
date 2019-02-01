@@ -1,42 +1,43 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-using ll = long long;
-
-ll arr[200005];
-bitset<1000005> m;
-//~ ll sum[200005];
-
-//~ map<ll, vector<int>> m;
+vector<int> toBin(int n) {
+	vector<int> vec(32);
+	
+	int i = 0;
+	while (n > 0) {
+		vec[i++] = n % 2;
+		n /= 2;
+	}
+	
+	return vec;
+}
 
 int main() {
-	ios_base::sync_with_stdio(0);
+	ios::sync_with_stdio(0);
 	cin.tie(0);
 	
-	int n;
-	vector<ll> vec;
+	int n, k;
+	cin >> n >> k;
 	
-	cin >> n;
-	
-	ll s = 0;
-	for (int i = 1; i <= n; ++i) {
-		cin >> arr[i];
-		s += arr[i];
-		m[arr[i]] = 1;
+	if (n == k) {
+		cout << "YES\n";
+		for (int i = 0; i < k; ++i)
+			cout << 1 << ' ';
+		return 0;
+	}
+	//~ else if (k == 1 and n > 1 && ceil(log2(n)) != floor(log2(n))) {
+		//~ cout << "NO\n";
+		//~ return 0;
+	//~ }
+	else if (k > n) {
+		cout << "NO\n";
+		return 0;
 	}
 	
-	//~ for (int i = 1; i <= n; ++i) sum[i] = s - arr[i];
+	vector<int> bin = toBin(n);
 	
-	for (int i = 1; i <= n; ++i) {
-		
-		ll t = s - arr[i];
-		
-		if (m[t/2]) vec.push_back(i);
-		
-	}
 	
-	cout << vec.size() << '\n';
-	for (ll i : vec) cout << i << ' ';
 	
 	return 0;
 }
