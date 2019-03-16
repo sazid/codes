@@ -10,10 +10,10 @@ vector<int> rabin_karp(string const& s, string const& t) {
 	p_pow[0] = 1;
 	for (int i = 1; i < (int)p_pow.size(); ++i)
 		p_pow[i] = (p_pow[i-1] * p) % m;
-
+			
 	vector<long long> h(T + 1, 0);
 	for (int i = 0; i < T; ++i)
-		h[i+1] = (h[i] + t[i] * p_pow[i]) % m;
+		h[i+1] = (h[i] + t[i] * p_pow[i]) %m;
 	
 	long long h_s = 0;
 	for (int i = 0; i < S; ++i)
@@ -30,6 +30,14 @@ vector<int> rabin_karp(string const& s, string const& t) {
 }
 
 int main() {
+	string s, t;
+	int n;
+	while (cin>>n) {
+		cin>>s>>t;
+		vector<int> pos = rabin_karp(s, t);
+		for (int i : pos) cout << i << '\n';
+		cout << '\n';
+	}
 	return 0;
 }
 
